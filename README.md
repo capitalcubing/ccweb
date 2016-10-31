@@ -1,2 +1,2 @@
 # ccweb
-CC is nub
+CC is pro
