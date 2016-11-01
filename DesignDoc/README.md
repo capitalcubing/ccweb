@@ -28,7 +28,8 @@ The proposed design of Home page looks as below
 On mouse hover, it changes icons to text description
 ![Hover](images/hover.png)
 On mouse click, it splits in a sequence.
-<img src="images/split1.png" width="250">
-<img src="images/split2.png" width="250">
-<img src="images/split3.png" width="250">
+
+<img src="images/split1.png" width="240">
+<img src="images/split2.png" width="240">
+<img src="images/split3.png" width="240">
 
