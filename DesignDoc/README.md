@@ -23,11 +23,14 @@
 9. Donate (yay thug lyf)
 
 ###<a name="home-desc">1. Home</a>
+The homepage will have only a few buttons(less than 10) which will be the broadcast categories we can make. The current design is a tesselation of rhombi (which is a projected view of a cube) .
+Heading Font = Strasua
+Tagline Font = Any (e.g. Century Gothic) 
 The proposed design of Home page looks as below
 ![Home Design](images/homedesign.png)
 On mouse hover, it changes icons to text description
 ![Hover](images/hover.png)
-On mouse click, it splits in a sequence as below.
+On mouse click, it splits in a sequence as below, to now <b> show subcategories instead of original categories </b> . We can insert as much depth we want this way.
 
 <img src="images/split1.png" width="250">
 <img src="images/split2.png" width="250">
