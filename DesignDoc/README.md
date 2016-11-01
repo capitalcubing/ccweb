@@ -11,7 +11,7 @@
   * Our mission and vision
   * Contact
 3. Comps
-  *<a name="upcoming comps">Upcoming Competitions </a>
+  * Upcoming Competitions<a name="upcoming comps"></a>
   * Past Competitions
 4. Blog
 5. <a name="org-guide"> Organizers Guide </a>
