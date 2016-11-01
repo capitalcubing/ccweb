@@ -23,10 +23,10 @@
 9. Donate (yay thug lyf)
 
 ###<a name="home-desc">1. Home</a>
-The homepage will have only a few buttons(less than 10) which will be the broadcast categories we can make. The current design is a tesselation of rhombi (which is a projected view of a cube) .
+The homepage will have only a few buttons(less than 10) which will be the broadcast categories we can make. The current design is a tesselation of rhombi (which is a projected view of a cube) . <br>
 
 Heading Font = Strasua <br>
-Tagline Font = Any (e.g. Century Gothic) 
+Tagline Font = Any (e.g. Century Gothic) <br>
 
 The proposed design of Home page looks as below
 ![Home Design](images/homedesign.png)
