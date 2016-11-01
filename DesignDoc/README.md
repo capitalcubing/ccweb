@@ -31,5 +31,5 @@ On mouse click, it splits in a sequence.
 <div style="float: right">
 ![Split1](images/split1.png =200x)
 ![Split2](images/split2.png =200x)
-![Split3](images/split3.png =200x "Title")
+![Split3](images/split3.png =200x)
 </div>
