@@ -9,3 +9,7 @@ List of Broad modules to be implemented
 5. Custom Substep Timing
 6. Validity checking of times
 7. Weekly/Monthly competitions
+8. Speciality Scrambles
+9.  Advanced Analytics on Times
+10.  Chat with timer
+11. * 
