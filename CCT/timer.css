@@ -1,0 +1,15 @@
+#TimeDisplay{
+    /*border-style: solid;
+    border-width: 2px;*/	
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 470px;
+    margin-left: 420px;
+    background: #73AD21;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 400%;
+    text-align: center;
+}
+#minutes, #cseconds, #seconds{
+	text-align: center;
+}
