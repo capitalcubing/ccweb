@@ -1,73 +1,141 @@
-    var CentiSeconds = 0;
-    var timeVar;
-   function setTimer(){
-   	  CentiSeconds  = 0;
-      timerVar = setInterval(countTimer, 10);//calls countTimer every 10 milli seconds 
-   }
-   
-   function back_to_base(){
-    	 
-     document.body.onkeyup = function(e){
-    if(e.keyCode == 32){
-
+//also load scramble in stage1
+function stage1()
+{   
     document.getElementById("cseconds").innerHTML = "00";
     document.getElementById("minutes").innerHTML = "00:";
     document.getElementById("seconds").innerHTML = "00:";
-     document.body.onkeyup = function(w){
-    if(w.keyCode == 32){  
-     setTimer();
-     }
- }
+    document.body.onkeydown = function(e)
+    {	
+    	console.log("scramble\n");
+    	if(e.keyCode == 32) //press space to trigger stage 2
+    	{	
+    		stage2();
+    		console.log("am here\n");
+        }
+    }
+}    
+
+
+function stage2()
+{
+    document.getElementById("cseconds").innerHTML = "";
+    document.getElementById("minutes").innerHTML = "";
+    document.getElementById("seconds").innerHTML = "15";
+    document.body.onkeyup = function(e)
+    {
+    	if(e.keyCode == 32) //press space to trigger stage 2
+    	{	
+    		var elapsedTime, second=0;
+    		startTime = Date.now();
+
+    		var interval = setInterval(function() 
+    		{	
+    			document.body.onkeyup = function(e)
+    			{
+    				if(e.keyCode == 32) //press space to trigger stage 2
+    				{	
+    					window.clearInterval(interval);
+    					stage3();
+        			}
+    			}
+
+    			elapsedTime = Math.floor((Date.now() - startTime)/10);
+    			second = Math.floor((elapsedTime)/100);
+			    var second_string = "";
+			    
+			    if (15-second<=9){
+			   	second_string = "0" + String(15-second);
+			    }
+			    else{
+			    second_string = String(15-second);
+			    }
+			    document.getElementById("seconds").innerHTML = second_string;
+
+		    }, 10);
+        }
+    }
+
+    return;
 }
-     }
-
-   }
 
 
-   function countTimer() {
-	   CentiSeconds++;
-	   document.body.onkeyup = function(e){
-    		if(e.keyCode == 32){
-    		 window.clearInterval(timerVar); 
-    		 back_to_base();
-    		}
-		}
-	   var minute = Math.floor(CentiSeconds/6000);
-	   var second = Math.floor((CentiSeconds - minute*6000)/100);
-	   var centi_second = CentiSeconds - (minute*6000 + second*100);
-	   var minute_string = "";
-	   var second_string = "";
-	   var centi_string = "";
-	   if(minute<=9){
+
+function stage3()
+{	
+    document.getElementById("cseconds").innerHTML = "00";
+    document.getElementById("minutes").innerHTML = "00:";
+    document.getElementById("seconds").innerHTML = "00:";
+
+	var elapsedTime, minute=0, second=0, centisecond=0;
+    startTime = Date.now();
+
+    var interval = setInterval(function() 
+    {	
+
+    	document.body.onkeyup = function(e)
+    	{
+    		if(e.keyCode == 32) //press space to trigger stage 2
+    		{	
+    			window.clearInterval(interval);
+    			return;
+        	}
+    	}
+
+    	elapsedTime = Math.floor((Date.now() - startTime)/10);
+    	minute = Math.floor(elapsedTime/6000);
+    	second = Math.floor((elapsedTime - minute*6000)/100);
+    	centisecond = elapsedTime - (minute*6000 + second*100);
+    	var minute_string = "";
+	    var second_string = "";
+	    var centi_string = "";
+	    if(minute<=9){
 	   	minute_string = "0" + String(minute);
-	   }
-	   else{
+	    }
+	    else{
 	   	minute_string = String(minute);
-	   }
-	   if (second<=9){
+	    }
+	    if (second<=9){
 	   	second_string = "0" + String(second);
-	   }
-	   else{
+	    }
+	    else{
 	    second_string = String(second);
-	   }
-	   if(centi_second<=9){
-	    centi_string = "0" + String(centi_second);
-	   }
-	   else{
-	   	centi_string = String(centi_second);
-	   }
+	    }
+	    if(centisecond<=9){
+	    centi_string = "0" + String(centisecond);
+	    }
+	    else{
+	   	centi_string = String(centisecond);
+	    }
 
-	   document.getElementById("cseconds").innerHTML = centi_string;
+	    document.getElementById("cseconds").innerHTML = centi_string;
 
-	   if(centi_second==0){
-	   document.getElementById("seconds").innerHTML = second_string + ":";	
-	   }
+	    document.getElementById("seconds").innerHTML = second_string + ":";	
 
-	   if(second==0){
-	   document.getElementById("minutes").innerHTML = minute_string + ":";	
-	   }
-   }
+	    document.getElementById("minutes").innerHTML = minute_string + ":";	
+	    
 
+    }, 10);
+}
+
+
+
+function stage4()
+{
+	document.body.onkeydown = function(e)
+    {
+    	if(e.keyCode == 32) //press space to trigger stage 2
+    	{	
+    		//alert('hello');
+    		stage1();
+        }
+    }	
+}
+
+
+
+
+
+   
 /*
 what we want now is to divide the thing into stages. 
 stage 1: 00:00:00 
