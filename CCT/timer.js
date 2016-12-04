@@ -32,9 +32,9 @@
     		 back_to_base();
     		}
 		}
-	   var minute = Math.floor(CentiSeconds/3600);
-	   var second = Math.floor((CentiSeconds - minute*3600)/60);
-	   var centi_second = CentiSeconds - (minute*3600 + second*60);
+	   var minute = Math.floor(CentiSeconds/6000);
+	   var second = Math.floor((CentiSeconds - minute*6000)/100);
+	   var centi_second = CentiSeconds - (minute*6000 + second*100);
 	   var minute_string = "";
 	   var second_string = "";
 	   var centi_string = "";
@@ -68,4 +68,11 @@
 	   }
    }
 
-
+/*
+what we want now is to divide the thing into stages. 
+stage 1: 00:00:00 
+stage 2: this is triggered when we press space and 15 se 0 tak ka countdown starts. 
+stage 3: this is triggered when we press space in stage 2. if we don't and we reach 15 -> dnf. 
+stage 4: normal time goes up from 00:00:00 till we press space. 
+stage 5: when we press space in stage 4. if we press space or maybe R (for reset) we go back to stage 1.
+*/
