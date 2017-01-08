@@ -31,5 +31,6 @@ List of Broad modules to be implemented
 27. Substep Solutions
 28. \* Option to export scrambles to PDF for printing
 29. \* Algorithm reference. Maybe even ption to set preferred algorithms and track them across users.
+30. Manual Time Entry
 
 
