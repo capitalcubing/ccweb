@@ -1,4 +1,8 @@
 
+*, html {
+    margin:0;
+    padding:0;  
+}
 
 h1{
 	color:red;
@@ -27,7 +31,7 @@ h2{
 }
 
 .kek img{
-	height:3.7vh;
+	height:4.7vh;
 }
 
 .kek{
@@ -60,3 +64,4 @@ h2{
 .nav-color6{
 	background-color:#000094;
 }
+
