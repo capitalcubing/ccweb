@@ -266,6 +266,8 @@ html,body {
 .container {
   position: relative;
   width: 100%;
+   border-style: solid;
+    border-width: 15px;
 }
 
 .image {
