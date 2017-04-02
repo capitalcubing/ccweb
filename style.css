@@ -13,7 +13,7 @@ h2{
 }
 
 .left-nav{
-	line-height:100%;
+	line-height:1.5em;
 }
 .intro{
 	background-color:#DADFCE;
@@ -82,7 +82,7 @@ h2{
 	font-size:1.7vh;
 }
 
-.head-menu .kek img{
+.head-menu .kek2 img{
 	height:2.5vh;
 }
 }
