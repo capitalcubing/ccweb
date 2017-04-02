@@ -8,14 +8,11 @@ h2{
   color:blue;
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(http://allfont.net/allfont.css?fonts=strasua);
-}
+
 
 @font-face {
 	font-family: Strasua;
-    src: url('CCT/fonts/Strasua.ttf'); 
+    src: url('/CCT/fonts/Strasua.ttf'); 
     }
 
 
