@@ -13,12 +13,16 @@ h2{
     src: url(http://allfont.net/allfont.css?fonts=strasua);
 }
 
+@font-face { 
+	font-family: Strasua;
+	src: url('Strasua.ttf');
+	 font-size: 48px;
+        text-shadow: 4px 4px 4px #aaa;
+	}
+
 f1 {
-<<<<<<< HEAD
     font-family: 'Strasua', arial;
-=======
-	  font-family: 'Strasua', arial;
->>>>>>> fa3e8bd395e4fd00ca307119b9910bc8c5447385
+
 }
 
 
