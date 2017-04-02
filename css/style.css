@@ -6,13 +6,14 @@ h1{
 
 h2{
   color:blue;
+	font-family: 'Strasua'; /* test */
 }
 
 
 
 @font-face {
 	font-family: 'Strasua';
-    src: url('CCT/fonts/Strasua.ttf'); 
+    	src: url('CCT/fonts/Strasua.ttf'); 
     }
 
 .header-cc {
