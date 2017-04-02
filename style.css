@@ -1,3 +1,5 @@
+
+
 h1{
 	color:red;
 	background-color:black;
@@ -17,13 +19,23 @@ h2{
 
 
 
+
 .left-nav{
 	height:16.5vh;
 	text-align: center;
 	color:white;
-	font-size:2.7vh;
 }
 
+.kek img{
+	height:3.7vh;
+}
+
+.kek{
+	position:relative;
+	top:5.5vh;
+	bottom:5.5vh;
+	font-size:2.7vh;
+}
 
 .nav-color1{
 	background-color:#4B1A4A; 
@@ -47,20 +59,4 @@ h2{
 
 .nav-color6{
 	background-color:#000094;
-}
-
-.block:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-}
-
-/* The element to be centered, can
-   also be of any width and height */ 
-.centered {
-  display: inline-block;
-  vertical-align: middle;
-  width: 300px;
 }
