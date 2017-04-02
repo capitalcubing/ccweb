@@ -12,6 +12,9 @@ h2{
 	color:green;
 }
 
+.left-nav{
+	line-height:100%;
+}
 .intro{
 	background-color:#DADFCE;
 }
@@ -40,6 +43,10 @@ h2{
 	background-color:#000094;
 }
 
+.navbar{
+	margin-bottom: 0
+}
+
 @media(max-width:767px){
 .head-menu .left-nav{
 	height:5vh;
@@ -49,7 +56,7 @@ h2{
 
 .head-menu .kek{
 	position:relative;
-	top:0vh;
+	top:0.5vh;
 	bottom:0vh;
 	font-size:1.7vh;
 }
