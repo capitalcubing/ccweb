@@ -12,15 +12,15 @@ h2{
 
 @font-face {
 	font-family: 'Strasua';
-    src: url('ccweb/CCT/fonts/Strasua.ttf'); 
+    src: url('CCT/fonts/Strasua.ttf'); 
     }
 
 .header-cc {
-	font-family: "Strasua";
+	font-family: 'Strasua';
 }
 
 #intro {
-	font-family:"Strasua";
+	font-family:'Strasua';
 }
 	
 
