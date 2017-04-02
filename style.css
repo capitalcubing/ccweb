@@ -16,7 +16,8 @@ h2{
 }
 
 .full {
-    width: 100%;	
+    width: 180px;
+    float:left;	
 }
 .gap {
 	height: 30px;
@@ -86,13 +87,17 @@ h2{
 	-ms-border-radius: 3px;
 	border-radius: 3px;
 	display: inline-block;
-	height: 40px;
+	height: 30px;
 	padding: 0;
 	width: 100%;
 	color: #fff;
 }
 .newsletter-box {
 	overflow: hidden;
+}
+
+.newsletter-box .full{
+	height: 30px;
 }
 .bg-gray {
 	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
