@@ -15,6 +15,10 @@ h2{
     src: url('/CCT/fonts/Strasua.ttf'); 
     }
 
+.header-cc {
+	font-family: Strasua;
+}
+
 
 .mybg-logo{
 height:100vh;
