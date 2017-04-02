@@ -44,7 +44,16 @@ h2{
 }
 
 .navbar{
-	margin-bottom: 0
+	margin-bottom: 0px;
+	border: 0px solid transparent;
+}
+
+.nav-pills > li + li {
+  margin-left: 0px;
+}
+
+.nav-stacked > li + li {
+  margin-top: 0px;
 }
 
 @media(max-width:767px){
@@ -67,7 +76,7 @@ h2{
 
 @media(min-width:768px){
 .left-nav{
-	height:16.5vh;
+	height:16.66vh;
 	text-align: center;
 	color:white;
 }
@@ -83,6 +92,5 @@ h2{
 	bottom:5.5vh;
 	font-size:2.7vh;
 }
-
 }
 
