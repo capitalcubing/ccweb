@@ -14,7 +14,11 @@ h2{
 }
 
 f1 {
+<<<<<<< HEAD
     font-family: 'Strasua', arial;
+=======
+	  font-family: 'Strasua', arial;
+>>>>>>> fa3e8bd395e4fd00ca307119b9910bc8c5447385
 }
 
 html,body {
