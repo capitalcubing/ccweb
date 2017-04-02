@@ -1,9 +1,4 @@
 
-*, html {
-    margin:0;
-    padding:0;  
-}
-
 h1{
 	color:red;
 	background-color:black;
@@ -19,26 +14,6 @@ h2{
 
 .intro{
 	background-color:#DADFCE;
-}
-
-
-
-
-.left-nav{
-	height:16.5vh;
-	text-align: center;
-	color:white;
-}
-
-.kek img{
-	height:4.7vh;
-}
-
-.kek{
-	position:relative;
-	top:5.5vh;
-	bottom:5.5vh;
-	font-size:2.7vh;
 }
 
 .nav-color1{
@@ -63,5 +38,45 @@ h2{
 
 .nav-color6{
 	background-color:#000094;
+}
+
+@media(max-width:767px){
+.head-menu .left-nav{
+	height:5vh;
+	text-align: center;
+	color:white;
+}
+
+.head-menu .kek{
+	position:relative;
+	top:0vh;
+	bottom:0vh;
+	font-size:1.7vh;
+}
+
+.head-menu .kek img{
+	height:2.5vh;
+}
+}
+
+@media(min-width:768px){
+.left-nav{
+	height:16.5vh;
+	text-align: center;
+	color:white;
+}
+
+
+.kek img{
+	height:4.7vh;
+}
+
+.kek{
+	position:relative;
+	top:5.5vh;
+	bottom:5.5vh;
+	font-size:2.7vh;
+}
+
 }
 
