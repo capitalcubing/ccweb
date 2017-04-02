@@ -15,31 +15,42 @@ h2{
 	background-color:#DADFCE;
 }
 
-.left-nav{
+
+li.left-nav{
 	height:16.5vh;
+}
+
+a.left-nav{
+	height:16.5vh;
+}
+
+.left-nav{
 	color:white;
+	text-align:center;
+	vertical-align: middle;
 }
 
 .nav-color1{
-	background-color:#9C27B0; 
+	background-color:#4B1A4A; 
 }
 
 .nav-color2{
-	background-color:#F44336;
+	background-color:#E10000;
 }
 
 .nav-color3{
-	background-color:#FF5722;
+	background-color:#F65D00;
 }
 
 .nav-color4{
-	background-color:#74D106;
+	background-color:#009600;
 }
 
 .nav-color5{
-	background-color:#2196F3;
+	background-color:#0068FF;
 }
 
 .nav-color6{
-	background-color:#3F51B5;
+	background-color:#000094;
 }
+
