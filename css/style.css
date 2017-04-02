@@ -13,12 +13,10 @@ h2{
     src: url(http://allfont.net/allfont.css?fonts=strasua);
 }
 
-@font-face { 
+@font-face {
 	font-family: Strasua;
-	src: url('CCT/fonts/Strasua.ttf');
-	 font-size: 48px;
-        text-shadow: 4px 4px 4px #aaa;
-	}
+    src: url('CCT/fonts/Strasua.ttf'); 
+    }
 
 
 .mybg-logo{
