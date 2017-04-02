@@ -16,19 +16,14 @@ h2{
 }
 
 
-li.left-nav{
-	height:16.5vh;
-}
-
-a.left-nav{
-	height:16.5vh;
-}
 
 .left-nav{
+	height:16.5vh;
+	text-align: center;
 	color:white;
-	text-align:center;
-	vertical-align: middle;
+	font-size:2.7vh;
 }
+
 
 .nav-color1{
 	background-color:#4B1A4A; 
@@ -54,3 +49,18 @@ a.left-nav{
 	background-color:#000094;
 }
 
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
