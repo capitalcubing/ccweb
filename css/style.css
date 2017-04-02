@@ -1,0 +1,259 @@
+
+h1{
+  color:red;
+  background-color:black;
+}
+
+h2{
+  color:blue;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(http://allfont.net/allfont.css?fonts=strasua);
+}
+
+f1 {
+<<<<<<< HEAD
+    font-family: 'Strasua', arial;
+=======
+	  font-family: 'Strasua', arial;
+>>>>>>> fa3e8bd395e4fd00ca307119b9910bc8c5447385
+}
+
+
+.mybg-logo{
+height:100vh;
+background:linear-gradient(
+      rgba(75, 0, 235, 0.81), 
+      rgba(75, 0, 235, 0.81)
+    ),url(logos/complexity_cc.jpg);
+}
+
+.mybg-home{
+height:100vh;
+background:linear-gradient(
+      rgba(225, 0, 0, 0.81), 
+      rgba(225, 0, 0, 0.81)
+    ),url(logos/complexity_cc.jpg);
+}
+
+.mybg-about{
+height:100vh;
+background:linear-gradient(
+      rgba(246, 93, 0, 0.81), 
+      rgba(246, 93, 0, 0.81)
+    ),url(logos/complexity_cc.jpg);
+}
+
+.mybg-competitions{
+height:100vh;
+background:linear-gradient(
+      rgba(0, 150, 0, 0.81), 
+      rgba(0, 150, 0, 0.81)
+    ),url(logos/complexity_cc.jpg);
+}
+
+.mybg-blog{
+height:100vh;
+background:linear-gradient(
+      rgba(0, 104, 255, 0.81), 
+      rgba(0, 104, 255, 0.81)
+    ),url(logos/complexity_cc.jpg);
+}
+
+
+.mybg-compguide{
+height:100vh;
+background:linear-gradient(
+      rgba(0, 0, 148, 0.81), 
+      rgba(0, 0, 148, 0.81)
+    ),url(logos/complexity_cc.jpg);
+}
+
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  width: 1024px;
+  margin: 2em auto;
+  
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.slide {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+  opacity: 1;
+}
+
+
+
+#greenhead{
+  color:green;
+}
+
+.left-nav{
+  line-height:1.5em;
+}
+.intro{
+  background-color:#DADFCE;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.nav-color1{
+  background-color:#3700a5; 
+}
+
+.nav-color2{
+  background-color:#da0000;
+}
+
+.nav-color3{
+  background-color:#db5700;
+}
+
+.nav-color4{
+  background-color:#e0c300;
+}
+
+.nav-color5{
+  background-color:#00c400;
+}
+
+.nav-color6{
+  background-color:#005ed5;
+}
+
+.navbar{
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+}
+
+.nav-pills > li + li {
+  margin-left: 0px;
+}
+
+.nav-stacked > li + li {
+  margin-top: 0px;
+}
+
+
+.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+  overflow-x: hidden;
+  border-top: 0px solid transparent;
+
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 0px;
+}
+
