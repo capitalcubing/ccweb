@@ -8,6 +8,15 @@ h2{
 	color:blue;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(http://allfont.net/allfont.css?fonts=strasua);
+}
+
+f1 {
+    font-family: myFirstFont;
+}
+
 html,body {
 	margin: 0;
 	padding: 0;
