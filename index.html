@@ -16,6 +16,13 @@
 
 </head>
 
+<style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 20px;
+  }
+  </style>
+
 <body >	
 <nav class="navbar navbar-default" role="navigation">
 <div class="container-fluid">
@@ -78,6 +85,12 @@
 </div>
 </div>
 </nav>
+		  
+  <script>
+$(document).ready(function(){
+    $('.nav').affix({offset: {top: 205} }); 
+});
+</script>
 </body>
 
 
