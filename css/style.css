@@ -33,9 +33,7 @@ background:linear-gradient(
     ),url(../images/slider/complexity2016_group.jpg);*/
 	/*opacity: 0.2;
     filter: alpha(opacity=20);*/
-	background-color: black;
-	opacity: 0.6;
-    filter: alpha(opacity=60);
+	
 }
 
 .mybg-about{
