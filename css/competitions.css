@@ -25,24 +25,28 @@ h2
 .comp-box .content
 {
     overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 10px;
     font-size: 15px;
-    border: 1px solid gray;
+    border: 1px solid black;
     color: #3385FF;
 }
 .comp-box .title 
 {
     height:30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     line-height:30px;
     background:gray;
     font-size:18px;
     font-weight:bold;
     font-family:verdana;
     display:block;
-    color:white;
+    color:orange;
     display:block;
     padding:10px;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-bottom:none;
 }
 
