@@ -15,7 +15,7 @@ h2{
     	src: url('../CCT/fonts/Strasua.ttf'); 
     }
 
-.header-cc {
+.header-cc h1 {
 	font-family: 'Strasua';
 }
 
