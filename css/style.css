@@ -26,11 +26,11 @@ background:linear-gradient(
 }
 
 .mybg-home{
-height:100vh;
+/*height:100vh;
 background:linear-gradient(
       rgba(225, 0, 0, 0.81), 
       rgba(225, 0, 0, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
+    ),url(../images/slider/complexity2016_group.jpg);*/
 }
 
 .mybg-about{
