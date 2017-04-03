@@ -1,5 +1,9 @@
 /* for member page*/
 
+body{
+  color:pink
+}
+
 .container {
   position: relative;
   width: 100%;
