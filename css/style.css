@@ -28,19 +28,62 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.rect {
+  border-radius: 1rem;
+  background-color: blue;
+  height: 700px;
+  width: 95%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.upcoming-comps-name {
+  border-radius: 1rem;
+  background-color: red;
+  height: 240px;
+  width: 80%;
+  align-items: center;
+  box-shadow: 10px 10px 5px #000000;
+  margin: 0 auto;
+}
+
+#upcoming-comps-details {
+  padding-top: 0.5em;
+  float: right;
+  font-family: arial;
+  font-size: 15px;
+  color: black;
+
+}
+
+#img-circle img {
+  float: left;
+  padding-left: 0.5rem;
+  float: left;
+  height: 25%;
+  width: 25%;
+}
+
+#upcoming-comps {
+  font-family: 'Century Gothic';
+  font-size: 70px;
+  color: white;
+  padding-left: 0.5em;
+}
+
+#countdown {
+  padding: 0;
+  text-align: center;
+  color: white;
+  font-size: 2em; 
+}
 	
 body {
 			background-image: url(../images/3x3cube1.jpg);
 	}
 	
-	h1 {
-	 font-size: 80px;
-	color: black;
-	 font-weight: bold;
-	 text-shadow: -5px 1px  #e6e6e6;
-	}
-	
-	h2 {
+		h2 {
 		font size: 40px;
 		color: black;
 		font-family: "Comic Sans MS", cursive, sans-serif;
