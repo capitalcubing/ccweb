@@ -34,6 +34,8 @@ background:linear-gradient(
 	/*opacity: 0.2;
     filter: alpha(opacity=20);*/
 	background-color: black;
+	opacity: 0.6;
+    filter: alpha(opacity=60);
 }
 
 .mybg-about{
