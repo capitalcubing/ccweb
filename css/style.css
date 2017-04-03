@@ -68,9 +68,9 @@ background:linear-gradient(
 
 .mybg-home{
 
-    background:linear-gradient(
-      rgba(225, 0, 0, 0.81), 
-      rgba(225, 0, 0, 0.81)
+   background:linear-gradient(
+      rgba(0, 0, 148, 0.81), 
+      rgba(0, 0, 148, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);
     height:100%;
     background-attachment: fixed;
@@ -109,10 +109,11 @@ background:linear-gradient(
 
 .mybg-compguide{
 height:100vh;
-background:linear-gradient(
-      rgba(0, 0, 148, 0.81), 
-      rgba(0, 0, 148, 0.81)
+	 background:linear-gradient(
+      rgba(225, 0, 0, 0.81), 
+      rgba(225, 0, 0, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);
+
 }
 
 
