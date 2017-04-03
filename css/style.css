@@ -31,8 +31,9 @@ background:linear-gradient(
       rgba(225, 0, 0, 0.81), 
       rgba(225, 0, 0, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);*/
-	opacity: 0.2;
-    filter: alpha(opacity=20);
+	/*opacity: 0.2;
+    filter: alpha(opacity=20);*/
+	background-color: black;
 }
 
 .mybg-about{
