@@ -7,19 +7,45 @@ h1
     font-family: 'Strasua' ;
     font-size: 50px;
     font-weight: bold;
-    letter-spacing: -1px; 
+    letter-spacing: 4px; 
     line-height: 150%;
     text-align: center; 
   }
 
 h2
-  {
+{
     color: #111;
     font-family: 'strasua' ;
     font-size: 25px;
     letter-spacing: 2px;
     line-height: 50%;
-    text-align: center;
+    text-align: center; 
+}
+
+.comp-box .content
+{
+    overflow: hidden;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid gray;
+    color: #3385FF;
+}
+.comp-box .title 
+{
+    height:30px;
+    line-height:30px;
+    background:gray;
+    font-size:18px;
+    font-weight:bold;
+    font-family:verdana;
+    display:block;
+    color:white;
+    display:block;
+    padding:10px;
+    border: 1px solid gray;
+    border-bottom:none;
+}
+
     
    
     
