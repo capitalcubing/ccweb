@@ -16,7 +16,7 @@
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   .affix {
       top: 0px;
-	width: 16.7%;
+	width: 16.667%;
 	  font-family: 'Strasua';
   }
 
@@ -111,9 +111,9 @@ background:linear-gradient(
 
 .mybg-home{
 
-    background:linear-gradient(
-      rgba(225, 0, 0, 0.81), 
-      rgba(225, 0, 0, 0.81)
+   background:linear-gradient(
+      rgba(0, 0, 148, 0.81), 
+      rgba(0, 0, 148, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);
     height:100%;
     background-attachment: fixed;
@@ -129,7 +129,7 @@ height:100vh;
       rgba(246, 93, 0, 0.81), 
       rgba(246, 93, 0, 0.81)
     ),*/
-	background-image: url(../images/3x3cube1.jpg);
+	background-image: url(../images/ao.gif);
 }
 
 .mybg-competitions{
@@ -152,10 +152,11 @@ background:linear-gradient(
 
 .mybg-compguide{
 height:100vh;
-background:linear-gradient(
-      rgba(0, 0, 148, 0.81), 
-      rgba(0, 0, 148, 0.81)
+	 background:linear-gradient(
+      rgba(225, 0, 0, 0.81), 
+      rgba(225, 0, 0, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);
+
 }
 
 

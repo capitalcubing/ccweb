@@ -1,0 +1,35 @@
+
+/* Set-up Strasua font and use it for nav-bar and home-page header */
+@font-face {
+	font-family: 'Strasua';
+    	src: url('fonts/Strasua.ttf'); 
+    }
+
+
+h6 {
+  	font-family: 'Strasua';
+	 font-size: 80px;
+	color: white;
+	 font-weight: bold;
+  	text-align: center;
+	
+	}
+	
+	p {
+		font-size: 20px;
+		color: white;
+		font-family: "Lucida Console", Monaco, monospace;
+    		text-align: center;
+	}
+	
+	h2 {
+		font-size: 40px;
+		color: white;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+    		text-align: center;
+	}
+	
+.mybg-about{
+height:100vh;
+	background-image: url(../images/ao.gif);
+}
