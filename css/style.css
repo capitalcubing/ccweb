@@ -79,7 +79,8 @@ html,body {
 .slider {
   width: 720px;
   margin: 2em auto;
-  
+  border-bottom: 6px solid blue;
+  border-top: 6px solid blue;
 }
 
 .slider-wrapper {
