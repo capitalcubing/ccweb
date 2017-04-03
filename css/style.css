@@ -84,15 +84,21 @@ body {
 	}
 	
 		h2 {
-		font size: 40px;
-		color: black;
+		font-size: 40px;
+		color: white;
 		font-family: "Comic Sans MS", cursive, sans-serif;
 		text-align: right;
 	}
+
+	h1{
+		font-family: 'Strasua';
+		font-size: 80px;
+		text-align: left;
+		color:white;
 	
 	h3 {
-		font size: 40px;
-		color: black;
+		font-size: 40px;
+		color: white;
 		font-family: "Comic Sans MS", cursive, sans-serif;
 	}
 	
