@@ -22,4 +22,4 @@
 3. You can document resources you have read below so others can refer. No need to document official documentation but something special that you did. But having good links handy will help everyone.
 
 ## Resources 
-1. Coursera Course for HTML,CSS and JS (Done by Akash. JS part is left)
+1. [Coursera Course](https://www.coursera.org/learn/html-css-javascript-for-web-developers) for HTML,CSS and JS (Done by Akash. JS part is left)
