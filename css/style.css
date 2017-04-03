@@ -26,13 +26,18 @@ background:linear-gradient(
 }
 
 .mybg-home{
-height:100vh;
-background:linear-gradient(
+
+    background:linear-gradient(
       rgba(225, 0, 0, 0.81), 
       rgba(225, 0, 0, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);*/
+    ),url(../images/slider/complexity2016_group.jpg);
 	opacity: 0.2;
     filter: alpha(opacity=20);
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	
 }
 
