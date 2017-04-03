@@ -12,6 +12,41 @@
 .left-nav {
 	font-family:'Strasua';
 }
+
+
+.parallax {
+    background-image: url(../images/3x3cube1.jpg);
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+	
+body {
+			background-image: url(../images/3x3cube1.jpg);
+	}
+	
+	h1 {
+	 font-size: 80px;
+	color: black;
+	 font-weight: bold;
+	 text-shadow: -5px 1px  #e6e6e6;
+	}
+	
+	h2 {
+		font size: 40px;
+		color: black;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		text-align: right;
+	}
+	
+	h3 {
+		font size: 40px;
+		color: black;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+	}
+	
 	
 
 
