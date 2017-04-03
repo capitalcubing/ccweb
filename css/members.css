@@ -4,6 +4,13 @@ body{
   color:pink
 }
 
+h1
+{
+  color:white;
+  font-family: 'Strasua';
+  font-size: 25px;
+}
+
 .container {
   position: relative;
   width: 100%;
