@@ -31,7 +31,7 @@ height:100vh;
 background:linear-gradient(
       rgba(75, 0, 235, 0.81), 
       rgba(75, 0, 235, 0.81)
-    ),url(logos/complexity_cc.jpg);
+    ),url(images/complexity_cc.jpg);
 }
 
 .mybg-home{
@@ -39,7 +39,7 @@ height:100vh;
 background:linear-gradient(
       rgba(225, 0, 0, 0.81), 
       rgba(225, 0, 0, 0.81)
-    ),url(logos/complexity_cc.jpg);
+    ),url(images/logos/complexity_cc.jpg);
 }
 
 .mybg-about{
@@ -47,7 +47,7 @@ height:100vh;
 background:linear-gradient(
       rgba(246, 93, 0, 0.81), 
       rgba(246, 93, 0, 0.81)
-    ),url(logos/complexity_cc.jpg);
+    ),url(images/logos/complexity_cc.jpg);
 }
 
 .mybg-competitions{
@@ -55,7 +55,7 @@ height:100vh;
 background:linear-gradient(
       rgba(0, 150, 0, 0.81), 
       rgba(0, 150, 0, 0.81)
-    ),url(logos/complexity_cc.jpg);
+    ),url(images/logos/complexity_cc.jpg);
 }
 
 .mybg-blog{
@@ -63,7 +63,7 @@ height:100vh;
 background:linear-gradient(
       rgba(0, 104, 255, 0.81), 
       rgba(0, 104, 255, 0.81)
-    ),url(logos/complexity_cc.jpg);
+    ),url(images/logos/complexity_cc.jpg);
 }
 
 
@@ -72,7 +72,7 @@ height:100vh;
 background:linear-gradient(
       rgba(0, 0, 148, 0.81), 
       rgba(0, 0, 148, 0.81)
-    ),url(logos/complexity_cc.jpg);
+    ),url(images/logos/complexity_cc.jpg);
 }
 
 
