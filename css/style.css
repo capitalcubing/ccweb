@@ -6,7 +6,7 @@
 
 .header-cc  {
 	font-family: 'Strasua';
-	color:white;
+	color:black;
 }
 
 .left-nav {
@@ -26,19 +26,26 @@ background:linear-gradient(
 }
 
 .mybg-home{
-height:100vh;
-background:linear-gradient(
+
+    background:linear-gradient(
       rgba(225, 0, 0, 0.81), 
       rgba(225, 0, 0, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
 }
 
 .mybg-about{
 height:100vh;
-background:linear-gradient(
+/*background:linear-gradient(
       rgba(246, 93, 0, 0.81), 
       rgba(246, 93, 0, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
+    ),*/
+	background-image: url(../images/3x3cube1.jpg);
 }
 
 .mybg-competitions{
@@ -47,6 +54,7 @@ background:linear-gradient(
       rgba(0, 150, 0, 0.81), 
       rgba(0, 150, 0, 0.81)
     ),url(../images/slider/complexity2016_group.jpg);
+	
 }
 
 .mybg-blog{
@@ -72,9 +80,10 @@ html,body {
   padding: 0;
 }
 .slider {
-  width: 1024px;
+  width: 720px;
   margin: 2em auto;
-  
+  border-bottom: 6px solid  #3385ff;
+  border-top: 6px solid  #3385ff;
 }
 
 .slider-wrapper {
@@ -113,7 +122,7 @@ html,body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  max-width: 100px;
   position: relative;
   margin: auto;
 }
