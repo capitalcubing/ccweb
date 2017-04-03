@@ -15,20 +15,20 @@ h01 {
 	}
 	
 	p1 {
-		font size: 30px;
+		font-size: 30px;
 		color: white;
 		font-family: "Comic Sans MS", cursive, sans-serif;
     		text-align: center;
 	}
 	
 	h2 {
-		font size: 40px;
+		font-size: 40px;
 		color: white;
 		font-family: "Comic Sans MS", cursive, sans-serif;
-    text-align: center;
+    		text-align: center;
 	}
 	
 .mybg-about{
 height:100vh;
-	background-image: url(../images/3x3cube1.jpg);
+	background-image: url(../images/ao.gif);
 }
