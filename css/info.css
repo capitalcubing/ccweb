@@ -15,11 +15,17 @@ h6 {
 	
 	}
 	
-	p {
+	p1 {
 		font-size: 20px;
 		color: white;
 		font-family: "Lucida Console", Monaco, monospace;
     		text-align: center;
+	}
+
+	p {
+		font-size: 20px;
+		color: white;
+		font-family: "Lucida Console", Monaco, monospace;
 	}
 	
 	h5 {
