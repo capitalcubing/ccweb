@@ -142,9 +142,9 @@ function test_input($data) {
 		  <p> Comment:  <textarea name="comment" rows="5" cols="40"> </textarea> </p>
   <br><br>
   <p> Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?></p> <p> Female</p>
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> <p> Female</p>
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> <p> Male </p>
-		  
+		  </p>
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
