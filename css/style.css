@@ -118,19 +118,6 @@ background:linear-gradient(
 	
 }
 
-.mybg-about{
-height:100%;
-/*background:linear-gradient(
-      rgba(246, 93, 0, 0.81), 
-      rgba(246, 93, 0, 0.81)
-    ),*/
-	background-image: url(../images/ao.gif);
-	    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .mybg-competitions{
 height:100%;
 background:linear-gradient(
