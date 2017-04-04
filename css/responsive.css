@@ -57,7 +57,7 @@
 @media(min-width:768px) and (max-width:991px){
   .affix {
       top: 0px;
-	width: 50%;
+	width: 33.334%;
 	  font-family: 'Strasua';
   }
 }
