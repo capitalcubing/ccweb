@@ -19,6 +19,8 @@
 	/*body {
 		    background-image: url(../images/ao.gif);
 	}*/
+	.error {color: #FF0000;}
+
 </style>
 
 
@@ -66,8 +68,10 @@
 	<br> <br> <br>
 		  
 		  
-		  		<?php
+<?php
+		  
 // define variables and set to empty values
+		  
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
@@ -123,29 +127,29 @@ function test_input($data) {
 }
 ?>
 	<br><br><br><br><br><br>	  
-<h5>CONTACT US</h5>
+<h5> CONTACT US </h5>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  <p> Name: </p> <input type="text" name="name" value="<?php echo $name;?>">
+  <p> Name: </p> <input type="text" name="name" value="">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
- <p>E-mail:</p><input type="text" name="email" value="<?php echo $email;?>">
+ <p>E-mail:</p><input type="text" name="email" value="">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-		  <p> Website: </p> <input type="text" name="website" value="<?php echo $website;?>">
+		  <p> Website: </p> <input type="text" name="website" value="">
   <span class="error"><?php echo $websiteErr;?></span>
   <br><br>
-		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"> </textarea>
   <br><br>
   <p> Gender:</p>
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female"> <p> Female</p>
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male"> <p> Male </p>
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> <p> Female</p>
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> <p> Male </p>
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
 		  
-		  
+	<br><br><br>	  
 		  
     </div>
   </div>
