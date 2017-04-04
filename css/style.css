@@ -319,6 +319,33 @@ html,body {
   background-color:#005ed5;
 }
 
+
+/* Set up colors of tiles for Modi*/
+.nav-color1{
+  background-color:#4B1A4A; 
+}
+
+.nav-color2{
+  background-color:#E10000;
+}
+
+.nav-color3{
+  background-color:#F65D00;
+}
+
+.nav-color4{
+  background-color:#009600;
+}
+
+.nav-color5{
+  background-color:#0068FF;
+}
+
+.nav-color6{
+  background-color:#000094;
+}
+
+
 /* Over-write bootstrap to remove padding and margins */
 .navbar{
   margin-bottom: 0px;
