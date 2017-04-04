@@ -30,10 +30,10 @@ h6 {
 	}
 	
 .mybg-about{
-height:100%;
-	background-image: url(../images/ao.gif);
-	    background-attachment: fixed;
+    height: 100%;
+    background-image: url(../images/ao.gif);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+   /* background-size: cover;*/
 }
