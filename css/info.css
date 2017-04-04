@@ -32,4 +32,8 @@ h6 {
 .mybg-about{
 height:100vh;
 	background-image: url(../images/ao.gif);
+	    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
