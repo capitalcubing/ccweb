@@ -130,21 +130,21 @@ function test_input($data) {
 <h5> CONTACT US </h5>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  <p> Name:  <input type="text" name="name" value=""> </p>
-  <span class="error">* <?php echo $nameErr;?></span>
+  <p> Name:  <input type="text" name="name" value=""> 
+  <span class="error">* <?php echo $nameErr;?></span></p>
   <br><br>
- <p>E-mail: <input type="text" name="email" value=""> </p>
-  <span class="error">* <?php echo $emailErr;?></span>
+ <p>E-mail: <input type="text" name="email" value=""> 
+  <span class="error">* <?php echo $emailErr;?></span></p>
   <br><br>
-		  <p> Website: <input type="text" name="website" value=""> </p> 
-  <span class="error"><?php echo $websiteErr;?></span>
+		  <p> Website: <input type="text" name="website" value=""> 
+  <span class="error"><?php echo $websiteErr;?></span></p> 
   <br><br>
-		  <p> Comment:  <textarea name="comment" rows="5" cols="40"> </textarea> </p>
+		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"> </textarea> 
   <br><br>
-  <p> Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> <p> Female</p>
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> <p> Male </p>
-		  </p>
+		  <p> Gender: 
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> Female
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  Male
+		</p>
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
