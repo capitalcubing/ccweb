@@ -28,7 +28,7 @@ h2
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 18px;
     border: 1px solid black;
     color: #3385FF;
 }
@@ -39,7 +39,7 @@ h2
     border-bottom-right-radius: 5px;
     line-height:30px;
     background:gray;
-    font-size:18px;
+    font-size:20px;
     font-weight:bold;
     font-family:verdana;
     display:block;
