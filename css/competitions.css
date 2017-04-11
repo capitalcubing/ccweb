@@ -22,32 +22,28 @@ h2
     text-align: center; 
 }
 
+.comp-box
+{
+  border:2px solid #0094ff
+}
+
 .comp-box .content
 {
-    overflow: hidden;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid black;
-    color: #3385FF;
+  color:#333;
+  padding:10px;
 }
 .comp-box .title 
 {
-    height:30px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    line-height:30px;
-    background:gray;
-    font-size:20px;
-    font-weight:bold;
-    font-family:verdana;
-    display:block;
-    color:orange;
-    display:block;
-    padding:10px;
-    border: 1px solid black;
-    border-bottom:none;
+  background:#0094ff;
+  color:white;
+  padding:10px;
+}
+.comp-box 
+{
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
 }
 
     
