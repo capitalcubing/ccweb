@@ -34,22 +34,6 @@ header, footer {
     text-align: center;
 }
 
-nav[role="sub"] {
-    float: left;
-    max-width: 350px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul[role="sub"]{
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a[role="sub"] {
-    text-decoration: none;
-}
-
 article {
     margin-left: 10px;
     border-left: 1px solid gray;
