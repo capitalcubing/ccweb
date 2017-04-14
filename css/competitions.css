@@ -21,33 +21,39 @@ h2
     text-align: center; 
 }
 
-.comp-box
-{
-  border:2px solid #0094ff
+div.comp-box {
+    width: 100%;
+    border: 1px solid gray;
 }
 
-.comp-box .content
-{
-  color:#333;
-  padding:10px;
-}
-.comp-box .title 
-{
-  background:#0094ff;
-  color:white;
-  padding:10px;
-}
-.comp-box 
-{
-    -moz-border-radius-topright:10px;
-    -moz-border-radius-topleft:10px;
-    -webkit-border-top-right-radius:5px;
-    -webkit-border-top-left-radius:5px;
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #0094ff;
+    clear: left;
+    text-align: center;
 }
 
-    
+nav {
+    float: left;
+    max-width: 350px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
    
-    
-   
+nav ul a {
+    text-decoration: none;
+}
 
+article {
+    margin-left: 10px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
 
