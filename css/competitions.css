@@ -34,10 +34,20 @@ header, footer {
     text-align: center;
 }
 
+.leftside
+ {
+    float: left;
+    max-width: 350px;
+    margin: 0;
+    padding: 1em;
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
 article {
     margin-left: 10px;
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
-}
 
