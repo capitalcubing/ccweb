@@ -4,7 +4,7 @@ h1
   { 
     color: #111;
     font-family: 'Strasua' ;
-    font-size: 50px;
+    font-size: 100px;
     font-weight: bold;
     letter-spacing: 4px; 
     line-height: 150%;
@@ -15,7 +15,7 @@ h2
 {
     color: #111;
     font-family: 'strasua' ;
-    font-size: 25px;
+    font-size: 50px;
     letter-spacing: 2px;
     line-height: 50%;
     text-align: center; 
