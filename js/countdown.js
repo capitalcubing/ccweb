@@ -1,3 +1,4 @@
+/*
 
 // Set the date we're counting down to
 var countDownDate = new Date("April 8, 2017 15:37:25").getTime();
@@ -27,7 +28,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
-
+ */
 
 /* new timer */
 
@@ -71,5 +72,5 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 90 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
