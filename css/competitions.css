@@ -6,7 +6,7 @@ h1
     font-family: 'Strasua' ;
     font-size: 100px;
     font-weight: bold;
-    letter-spacing: 4px; 
+   
     line-height: 150%;
     text-align: center; 
   }
@@ -16,7 +16,6 @@ h2
     color: #111;
     font-family: 'strasua' ;
     font-size: 50px;
-    letter-spacing: 2px;
     line-height: 50%;
     text-align: center; 
 }
