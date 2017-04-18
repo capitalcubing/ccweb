@@ -203,7 +203,7 @@ html,body {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100px;
-  position: relative;
+  position: center;
   margin: auto;
 }
 
