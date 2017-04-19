@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.css"></link>
 	<link rel="stylesheet" type="text/css" href="../css/style.css"> </link>
 	<link rel="stylesheet" type="text/css" href="../css/members.css"> </link>
+  <link rel="stylesheet" type="text/css" href="../css/pure-min.css"> </link>
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css"> </link>
 	<link rel="stylesheet" type="text/css" href="../css/info.css"> </link>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -20,7 +21,6 @@
 		    background-image: url(../images/ao.gif);
 	}*/
 	.error {color: #FF0000;}
-
 </style>
 
 
@@ -126,30 +126,44 @@ function test_input($data) {
   return $data;
 }
 ?>
-	<br><br><br><br><br><br>	  
-<h5> CONTACT US </h5>
-<p><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  <p> Name:  <input type="text" name="name" value=""> 
-  <span class="error">* <?php echo $nameErr;?></span></p>
-  <br><br>
- <p>E-mail: <input type="text" name="email" value=""> 
-  <span class="error">* <?php echo $emailErr;?></span></p>
-  <br><br>
-		  <p> Website: <input type="text" name="website" value=""> 
-  <span class="error"><?php echo $websiteErr;?></span></p> 
-  <br><br>
-		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"> </textarea> 
-  <br><br>
-		  <p> Gender: 
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  Male
-  <span class="error">* <?php echo $genderErr;?></span>
-		  </p>
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
-		  
+	<br><br><br>  
+<h5 style="text-align: center;"> CONTACT US </h5>
+<!--<p><span class="error">* required field.</span></p>-->
+<br><br><br><br>    
+
+<div align="center">
+  <form class="pure-form" align="center">
+        <fieldset class="pure-group">
+            <input type="text" class="pure-input-1-2" placeholder="Name"><br>
+            <input type="email" class="pure-input-1-2" placeholder="Email" required><br>
+            <input type="text" class="pure-input-1-2" placeholder="Phone Number"><br>
+            <textarea class="pure-input-1-2" placeholder="Comments" required></textarea>
+        </fieldset>
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Submit</button>
+    </form>
+  </div>
+    <!--<p> Name:  <input type="text" name="name" value=""> 
+    <span class="error">* <?php echo $nameErr;?></span></p>
+    <br><br>
+   <p>E-mail: <input type="text" name="email" value=""> 
+    <span class="error">* <?php echo $emailErr;?></span></p>
+    <br><br>
+  		  <p> Website: <input type="text" name="website" value=""> 
+    <span class="error"><?php echo $websiteErr;?></span></p> 
+    <br><br>
+  		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"> </textarea> 
+    <br><br>
+  		  <p> Gender: 
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> Female
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  Male
+    <span class="error">* <?php echo $genderErr;?></span>
+  		  </p>
+    <br><br>
+    <input type="submit" name="submit" value="Submit">  
+
+    -->		  
+
+
 	<br><br><br>	  
 		  
     </div>
@@ -161,13 +175,5 @@ $(document).ready(function(){
     $('.nav').affix({offset: {top: 0} }); 
 });
 </script>
-		
-		  
-		  
-		  
-
-		  
-  
-		
 </body>
 
