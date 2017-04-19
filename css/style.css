@@ -7,7 +7,8 @@
 .header-cc  {
 	font-family: 'Strasua';
 	color:white;
-      text-shadow: 2px 2px #a6a6a6
+      text-shadow: 2px 2px #a6a6a6;
+      margin-left: 230px;
 
 }
 
@@ -35,8 +36,8 @@
 	h1{
 		font-family: 'Strasua';
 		font-size: 80px;
+		text-align: left;
 		color:white;
-		margin-left:230px;
 }
 	
 	h3 {
@@ -313,7 +314,7 @@ article {
 .flip-container, .front, .back {
     width: 300px;
     display:inline-block;
-    height:361px;
+    height: 380px;
     margin-left: 10px;
     margin-right: 35px;
     margin-bottom: 100px;
@@ -396,7 +397,6 @@ article {
 
 }
 
-
 /* Style all font awesome icons */
 .fa {
    padding: 10px;
@@ -419,7 +419,7 @@ article {
 .fa-facebook {
     background: #3B5998;
     color: white;
-    margin-left: 600px;
+    margin-left: 670px;
     margin-right: 10px;
 }
 
@@ -457,3 +457,22 @@ article {
       margin-right: 10px;
 
 }
+
+
+.jumbotron {
+  opacity: 0.9;
+
+    width: 1040px;
+    height: 120px;
+      padding: 10px;
+  }
+
+  .logo {
+      font-size: 200px;
+  }
+  @media screen and (max-width: 268px) {
+    .col-sm-4 {
+      text-align: left;
+    }
+  }
+
