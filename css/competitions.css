@@ -104,7 +104,7 @@ article {
     width: 100%;
     display:inline-block;
 	margin:0px;
-	padding:10px;
+	padding:0px;
 }
 
 .front, .back {
@@ -152,13 +152,24 @@ article {
 .tile-gradient-overlay{
     background:  #8B008B ;
     }
-.event-title{
+.event-main{
     height:100%;
     width:100%;
-    background-color: rgba(255,255,255,0.1);
     color:#ffffff;
     font-size:16px;
     line-height:60px;
     text-align:center;
+}
+.event-title{
+    color:#ffffff;
+    height:0%;
+    font-size:16px;
+    line-height:60px;
+    text-align:center;
     text-transform:uppercase;
+}.event-body{
+    color:#ffffff;
+    font-size:16px;
+    line-height:60px;
+    text-align:center;
 }
