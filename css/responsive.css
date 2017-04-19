@@ -61,3 +61,93 @@
 	  font-family: 'Strasua';
   }
 }
+
+
+@media(max-width:767px){
+.head-menu .left-nav{
+  height:5vh;
+  text-align: center;
+  color:white;
+}
+
+.head-menu .kek{
+  position:relative;
+  top:0.25vh;
+  font-size:1.7vh;
+}
+
+.head-menu .kek2 img{
+  height:2.5vh;
+}
+}
+
+@media(min-width:768px){
+.left-nav{
+  height:14.28vh;
+  text-align: center;
+  color:white;
+}
+
+
+.kek2 img{
+  position:relative;
+  top:3vh;
+  height:8.7vh;
+}
+
+.kek{
+  position:relative;
+  top:5.5vh;
+  bottom:5.5vh;
+  font-size:2.7vh;
+}
+}
+
+@media(min-width:1200px){
+  .affix {
+      top: 0px;
+	width: 16.667%;
+	  font-family: 'Strasua';
+  }
+}
+
+@media(min-width:992px) and (max-width:1199px){
+  .affix {
+      top: 0px;
+	width: 25%;
+	  font-family: 'Strasua';
+  }
+}
+
+@media(min-width:768px) and (max-width:991px){
+  .affix {
+      top: 0px;
+	width: 33.334%;
+	  font-family: 'Strasua';
+  }
+}
+
+/*timer countdown responsive*/
+@media(max-width:402px){
+    #clockdiv>div{
+    margin-bottom: 20px;
+    }
+    #days-container{
+      margin-left: 50px;
+    }
+    #hours-container{
+      margin-right: 50px;
+    }
+}
+
+@media(max-width:310px){
+    #clockdiv>div{
+    margin-bottom: 20px;
+    }
+    #days-container{
+      margin-left: 20px;
+    }
+    #hours-container{
+      margin-right: 20px;
+    }
+}
