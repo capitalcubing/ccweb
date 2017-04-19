@@ -171,22 +171,26 @@ html {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
   
   .slider {
     width: 100vw;
     height: 100vw;
     z-index: 2;
+}
     
     * {
       outline: none;
     }
     
+
     .item {
       height: 100vh;
       width: 100vw;
       position: relative;
       overflow: hidden;
       border: none;
+}
       
       .text {
         display: none;
@@ -200,9 +204,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-    }
-  }
-  
+ 
   .slick-dots {
     position: fixed;
     z-index: 100;
@@ -215,17 +217,20 @@ html {
     left: auto;
     color: #fff;
     display: block;
+}
     
     li {
       display: block;
       width: 100%;
       height: auto;
+}
       
       & button {
         position: relative;
         width: 20px;
         height: 15px;
         text-align: center;
+}
         
         &:before {
           content: '';
@@ -242,7 +247,8 @@ html {
           transition: all .3s ease-in-out;
           opacity: 0.6;
         }
-      }
+
+
       
       &.slick-active {
         button {
@@ -251,22 +257,20 @@ html {
             opacity: 1;
           }
         }
-      }
-    }
-  }
+	}
   
   &.slideshow-right {
     left: 0;
     z-index: 1;
     width: 50vw;
     pointer-events: none;
+}
     
     .slider {
       left: 0;
       position: absolute;
     }
-  }
-}
+
 
 .slideshow-text {
   position: absolute;
