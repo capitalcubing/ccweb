@@ -67,22 +67,25 @@
 		 
 
 
- <h1>National Capital Region Open 2017</h1>
+<h1>National Capital Region Open 2017</h1>
+
+<br>
+
 <div id="clockdiv">
   <div>
-    <span class="days"></span>
+    <span id="days"></span>
     <div class="smalltext">Days</div>
   </div>
   <div>
-    <span class="hours"></span>
+    <span id="hours"></span>
     <div class="smalltext">Hours</div>
   </div>
   <div>
-    <span class="minutes"></span>
+    <span id="minutes"></span>
     <div class="smalltext">Minutes</div>
   </div>
   <div>
-    <span class="seconds"></span>
+    <span id="seconds"></span>
     <div class="smalltext">Seconds</div>
   </div>
 </div>
@@ -96,6 +99,13 @@ $(document).ready(function(){
     $('.nav').affix({offset: {top: 0} }); 
 });
 </script>
+
+<script>
+	secondss = new Countdown();
+	secondss.init();
+</script>
+
+
 </body>
 
 
