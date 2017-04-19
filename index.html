@@ -55,15 +55,15 @@
       "Simple solves don't make skillful cubers"    
 	</h2>
 		  <br><br><br><br>
-                <div class="w3-panel w3-topbar w3-bottombar w3-border-blue ">
-	        <div class="slider" id="main-slider"><!-- outermost container element -->
-	        <div class="slider-wrapper"><!-- innermost wrapper element -->
+ <div class="w3-panel w3-topbar w3-bottombar w3-border-blue ">
+		  <div class="slider" id="main-slider"><!-- outermost container element -->
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
 		<img src="images/slider/snu2017_banner1.jpg" alt="First" class="slide" /><!-- slides -->
 		<img src="images/slider/delhiopen2017_pic1.jpg" alt="Second" class="slide" />
 		<img src="images/slider/complexity2016_group.jpg" alt="Third" class="slide" />
 	</div>
 	</div>	
-        </div>
+		  </div>
 		 
 
 
@@ -73,23 +73,31 @@
 
 <div id="clockdiv">
 	<div id="days-container">
-    <span id="days"></span>
-    <div class="smalltext">Days</div>
-  </div>
-  <div id="hours-container">
-    <span id="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div id="minutes-container">
-    <span id="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div id="seconds-container">
-    <span id="seconds"></span>
-    <div class="smalltext">Seconds</div>
+    	<span id="days"></span>
+    	<div class="smalltext">Days</div>
+  	</div>
+  
+  	<div id="hours-container">
+    	<span id="hours"></span>
+    	<div class="smalltext">Hours</div>
+  	</div>
+  
+  	<div id="minutes-container">
+    	<span id="minutes"></span>
+    	<div class="smalltext">Minutes</div>
+  	</div>
+  
+  	<div id="seconds-container">
+    	<span id="seconds"></span>
+    	<div class="smalltext">Seconds</div>
+	</div>
+</div>
+
+<div id="anti-clockdiv">
+	anti-clockdiv be set to visible when the time is up in the countdown.
 </div>
 		  
-	<br><br><br><br>
+		  
 
 </nav>
 		  
@@ -101,14 +109,15 @@ $(document).ready(function(){
 
 <script>
 	var today = new Date();
-    var targetday = new Date(2017,3,28);
-    //if(today < targetday){
+    var targetday = new Date(2017,4,25); //write the target date here as YYYY/MM/DD take january = 0.
+    if(today < targetday){
     	secondss = new Countdown();
 		secondss.init();	
-    //}
-    //else{
-    //	getElementById("clockdiv").innerHTML = "The Comp is now!";
-    //}
+    }
+    else{	
+    	 document.getElementById("clockdiv").style.display = 'none';
+    	 document.getElementById("anti-clockdiv").style.display = 'inline-block';
+    }
 </script>
 
 
