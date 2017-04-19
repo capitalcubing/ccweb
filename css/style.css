@@ -120,7 +120,7 @@ background:linear-gradient(
 
 .mybg-competitions{
 height:100%;
-  background-image:url(../images/slider/competitions-background.jpg);
+  background-image:url(../images/slider/Green-Background-Abstract-Wallpaper-HD.jpg);
 	    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,6 +159,7 @@ html,body {
   margin: 0;
   padding: 0;
 }
+
 .slider {
   width: 720px;
   margin: 2em auto;
