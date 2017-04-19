@@ -1,14 +1,17 @@
 function Countdown()
 {
     var today = new Date();
-    var targetday = new Date(2017,3,21); //put target date here YY/MM/DD
-    //please note that for js January is 0 not 1. 
+    //put target date here YYYY/MM/DD.
+    //please note that for js January is 0 and not 1.
+    var targetday = new Date(2017,3,21); 
     var mnth = today.getMonth();
+    //this calculates the days difference and takes its floor value.
     var number_of_days_left = Math.floor(Math.abs((targetday.getTime() - today.getTime())/(24*60*60*1000)));
 
     var hr = (24-today.getHours())%24 ;
     var min = (60-today.getMinutes())%60;
     var sec = (60-today.getSeconds())%60;
+    
     this.start_time = ""+number_of_days_left+":"+hr+":"+min+":"+sec+"";
     this.name = "secondss";
 }
@@ -63,6 +66,7 @@ Countdown.prototype.update_target = function()
     minutes = this.minutes;
     hours = this.hours;
     days = this.days;
+    //append a 0 in front of the number if it less than 10. "9 days" will be shown as "09" days.
     if(days<10)
       days = "0"+days;
     if(seconds<10)
@@ -72,7 +76,7 @@ Countdown.prototype.update_target = function()
     if(hours<10)
         hours = "0"+hours;
 
-    
+    //change innerHTML values in main page 
     document.getElementById('days').innerHTML = days;
     document.getElementById('hours').innerHTML = hours;
     document.getElementById('minutes').innerHTML = minutes;
