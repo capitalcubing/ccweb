@@ -72,7 +72,7 @@
 <br>
 
 <div id="clockdiv">
-<div>
+	<div>
     <span id="days"></span>
     <div class="smalltext">Days</div>
   </div>
@@ -100,8 +100,15 @@ $(document).ready(function(){
 </script>
 
 <script>
-	secondss = new Countdown();
-	secondss.init();
+	var today = new Date();
+    var targetday = new Date(2017,3,28);
+    //if(today < targetday){
+    	secondss = new Countdown();
+		secondss.init();	
+    //}
+    //else{
+    //	getElementById("clockdiv").innerHTML = "The Comp is now!";
+    //}
 </script>
 
 
