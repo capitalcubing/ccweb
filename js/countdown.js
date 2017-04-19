@@ -63,6 +63,8 @@ Countdown.prototype.update_target = function()
     minutes = this.minutes;
     hours = this.hours;
     days = this.days;
+    if(days<10)
+      days = "0"+days;
     if(seconds<10)
         seconds = "0"+seconds;
     if(minutes<10)
