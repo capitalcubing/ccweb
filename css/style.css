@@ -405,8 +405,7 @@ html {
 
 .container {
   margin: 0;
-  max-width: 750px;
-  margin:10vh auto 0 auto;
+  max-width: 820px;
 }
 
 .container > div {
@@ -416,8 +415,8 @@ html {
 #slideshow {
   margin: 0;
 	position: relative;
-	width: 620px;
-  height: 250px;
+	width: 820px;
+  height: 300px;
 }
 
 #slideshow > div {
