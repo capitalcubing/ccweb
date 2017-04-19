@@ -2,7 +2,7 @@ function Countdown()
 {
     var today = new Date();
     var targetday = new Date(2017,3,22); //put target date here YY/MM/DD
-    //please note that for js January is 0 not 1. 
+    //please note that for js January is 0 and not 1. 
     var mnth = today.getMonth();
     var number_of_days_left = Math.floor(Math.abs((targetday.getTime() - today.getTime())/(24*60*60*1000)));
 
