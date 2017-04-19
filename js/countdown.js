@@ -69,10 +69,10 @@ Countdown.prototype.update_target = function()
         minutes = "0"+minutes;
     if(hours<10)
         hours = "0"+hours;
-    document.getElementById('days').innerHTML = '<h1>'+days+'</h1><p><b>Days</b></p>';
-    document.getElementById('hours').innerHTML = '<h1>'+hours+'</h1><p><b>Hours</b></p>';
-    document.getElementById('minutes').innerHTML = '<h1>'+minutes+'</h1><p><b>Minutes</b></p>';
-    document.getElementById('seconds').innerHTML = '<h1>'+seconds+'</h1><p><b>Seconds</b></p>';
+    document.getElementById('days').innerHTML = '<h1>'+days;
+    document.getElementById('hours').innerHTML = '<h1>'+hours;
+    document.getElementById('minutes').innerHTML = '<h1>'+minutes;
+    document.getElementById('seconds').innerHTML = '<h1>'+seconds;
 }
 
 
