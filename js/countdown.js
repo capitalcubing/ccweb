@@ -1,7 +1,7 @@
 function Countdown()
 {
     var today = new Date();
-    var targetday = new Date(2017,4,21); //put target date here YY/MM/DD
+    var targetday = new Date(2017,3,21); //put target date here YY/MM/DD
     //please note that for js January is 0 not 1. 
     var mnth = today.getMonth();
     var number_of_days_left = Math.floor(Math.abs((targetday.getTime() - today.getTime())/(24*60*60*1000)));
@@ -71,10 +71,10 @@ Countdown.prototype.update_target = function()
         minutes = "0"+minutes;
     if(hours<10)
         hours = "0"+hours;
-    document.getElementById('days').innerHTML = '<h1>'+days;
-    document.getElementById('hours').innerHTML = '<h1>'+hours;
-    document.getElementById('minutes').innerHTML = '<h1>'+minutes;
-    document.getElementById('seconds').innerHTML = '<h1>'+seconds;
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
 }
 
 
