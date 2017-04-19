@@ -79,7 +79,6 @@ article {
 .flip-container{
     width: 100%;
     display:inline-block;
-    height:341px;
 	margin:0px;
 	padding:10px;
 	margin-bottom:20px;
@@ -104,7 +103,6 @@ article {
 .front, .back {
     width: 100%;
     display:inline-block;
-	height:341px;
 	margin:0px;
 	padding:10px;
 }
