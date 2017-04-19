@@ -1,7 +1,6 @@
 
 
-h1
-  { 
+h1{ 
     color: #111;
     font-family: 'Strasua' ;
     font-size: 100px;
@@ -11,8 +10,7 @@ h1
     text-align: center; 
   }
 
-h2
-{
+h2{
     color: #111;
     font-family: 'strasua' ;
     font-size: 50px;
@@ -33,8 +31,7 @@ header, footer {
     text-align: center;
 }
 
-.leftside
- {
+.leftside{
     float: left;
     max-width: 350px;
     margin: 0;
@@ -49,4 +46,109 @@ article {
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
+}
+.flip-container{
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+}
 
+.flip-container:hover .back, .flip-container.hover .back{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+        
+.flip-container, .front, .back {
+    width: 450px;
+    display:inline-block;
+    height:361px;
+    margin-right:70px;
+    margin-bottom: 100px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+
+    -moz-transition: 0.6s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+}
+
+.front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.tile-gradient-overlay{
+    background:  #FF851B ;
+    }
+.event-title{
+    height:100%;
+    width:100%;
+    background-color: rgba(255,255,255,0.1);
+    color:#ffffff;
+    font-size:16px;
+    line-height:60px;
+    text-align:center;
+    text-transform:uppercase;
+}
