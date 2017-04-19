@@ -76,14 +76,14 @@ article {
     transform: rotateY(180deg);
 }
         
-.flip-container, .front, .back {
-    width: 450px;
+.flip-container{
+    width: 100%;
     display:inline-block;
-    height:361px;
-    margin-left: 10px;
-    margin-right: 35px;
-    margin-bottom: 100px;
-}
+    height:341px;
+	margin:0px;
+	padding:10px;
+	margin-bottom:20px;
+	  }
 
 .flipper {
     -webkit-transition: 0.6s;
@@ -99,6 +99,14 @@ article {
     transform-style: preserve-3d;
 
     position: relative;
+}
+
+.front, .back {
+    width: 100%;
+    display:inline-block;
+	height:341px;
+	margin:0px;
+	padding:10px;
 }
 
 .front, .back {
