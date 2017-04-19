@@ -155,14 +155,6 @@ height:100%;
 }
 
 
-body,
-html {
-  height: 100%;
-  background: #110101;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-}
-
 .slideshow {
   position: absolute;
   z-index: 1;
@@ -178,10 +170,7 @@ html {
     height: 100vw;
     z-index: 2;
 }
-    
-    * {
-      outline: none;
-    }
+   
     
 
     .item {
@@ -250,14 +239,13 @@ html {
 
 
       
-      &.slick-active {
+   
         button {
           &:before {
             width: 40px;
             opacity: 1;
           }
         }
-	}
   
   &.slideshow-right {
     left: 0;
@@ -288,12 +276,12 @@ html {
   text-transform: uppercase;
   letter-spacing: 20px;
   line-height: 0.8;
+}
   
   @media (max-width: 767px) {
     font-size: 40px;
   }
   
-}
 
 
 
