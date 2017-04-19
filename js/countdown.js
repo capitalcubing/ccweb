@@ -1,76 +1,79 @@
-/*
+function Countdown()
+{
+    var today = new Date();
+    var targetday = new Date(2017,3,21); //put target date here YY/MM/DD
+    //please note that for js January is 0 not 1. 
+    var mnth = today.getMonth();
+    var number_of_days_left = Math.floor(Math.abs((targetday.getTime() - today.getTime())/(24*60*60*1000)));
 
-// Set the date we're counting down to
-var countDownDate = new Date("April 8, 2017 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
-}, 1000);
- */
-
-/* new timer */
-
-
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
+    var hr = (24-today.getHours())%24 ;
+    var min = (60-today.getMinutes())%60;
+    var sec = (60-today.getSeconds())%60;
+    this.start_time = ""+number_of_days_left+":"+hr+":"+min+":"+sec+"";
+    this.name = "secondss";
 }
 
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+Countdown.prototype.init = function()
+{
+    this.reset();
+    setInterval(this.name + '.tick()', 1000);
+}
 
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
+Countdown.prototype.reset = function()
+{
+    time = this.start_time.split(":");
+    this.days = parseInt(time[0]);
+    this.hours = parseInt(time[1]);
+    this.minutes = parseInt(time[2]);
+    this.seconds = parseInt(time[3]);
+    this.update_target();
+}
 
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
+Countdown.prototype.tick = function()
+{
+    if(this.seconds==0){
+        if(this.minutes>0){
+            this.seconds = 59;
+            this.minutes = this.minutes - 1;
+        }
+        else if(this.minutes==0){
+            if(this.hours>0){
+                this.minutes = 59;
+                this.hours = this.hours-1;
+                this.seconds = 59;
+            }
+            else if(this.hours==0){
+                if(this.days>0){
+                    this.hours = 23;
+                    this.days = this.days-1;
+                    this.minutes = 59;
+                    this.seconds = 59;
+                }
+            }
+        }
     }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
+    else
+        this.seconds = this.seconds - 1;
+    this.update_target();
 }
 
-var deadline = new Date(Date.parse(new Date()) + 90 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
+Countdown.prototype.update_target = function()
+{
+    seconds = this.seconds;
+    minutes = this.minutes;
+    hours = this.hours;
+    days = this.days;
+    if(seconds<10)
+        seconds = "0"+seconds;
+    if(minutes<10)
+        minutes = "0"+minutes;
+    if(hours<10)
+        hours = "0"+hours;
+    document.getElementById('days').innerHTML = '<h1>'+days+'</h1><p><b>Days</b></p>';
+    document.getElementById('hours').innerHTML = '<h1>'+hours+'</h1><p><b>Hours</b></p>';
+    document.getElementById('minutes').innerHTML = '<h1>'+minutes+'</h1><p><b>Minutes</b></p>';
+    document.getElementById('seconds').innerHTML = '<h1>'+seconds+'</h1><p><b>Seconds</b></p>';
+}
+
+
+
