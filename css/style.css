@@ -7,7 +7,8 @@
 .header-cc  {
 	font-family: 'Strasua';
 	color:white;
-      text-shadow: 2px 2px #a6a6a6
+      text-shadow: 2px 2px #a6a6a6;
+      margin-left: 230px;
 
 }
 
@@ -26,7 +27,7 @@
 
 
 		h2 {
-		font-size: 40px;
+		font-size: 30px;
 		color: white;
 		font-family: "Arial", cursive, sans-serif;
 	
@@ -313,7 +314,7 @@ article {
 .flip-container, .front, .back {
     width: 300px;
     display:inline-block;
-    height:361px;
+    height: 380px;
     margin-left: 10px;
     margin-right: 35px;
     margin-bottom: 100px;
@@ -395,3 +396,83 @@ article {
 ;
 
 }
+
+/* Style all font awesome icons */
+.fa {
+   padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 670px;
+    margin-right: 10px;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+        margin-right: 10px;
+
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      
+
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+      margin-right: 10px;
+
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+      margin-right: 10px;
+
+}
+
+
+.jumbotron {
+  opacity: 0.9;
+
+    width: 1040px;
+    height: 120px;
+      padding: 10px;
+  }
+
+  .logo {
+      font-size: 200px;
+  }
+  @media screen and (max-width: 268px) {
+    .col-sm-4 {
+      text-align: left;
+    }
+  }
+
