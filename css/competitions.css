@@ -2,7 +2,7 @@
 
 h1
   { 
-    color: #111;
+    color: white;
     font-family: 'Strasua' ;
     font-size: 100px;
     font-weight: bold;
@@ -13,7 +13,7 @@ h1
 
 h2
 {
-    color: #111;
+    color: white;
     font-family: 'strasua' ;
     font-size: 50px;
     line-height: 50%;
