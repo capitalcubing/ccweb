@@ -198,7 +198,7 @@ fieldset {
 	padding: .2em 0 .8em
  }
 
-@media only screen and (max-width :480px) {	.pure-form .pure-input-1-2 {width: 75%}
+@media only screen and (max-width :766px) {	.pure-form .pure-input-1-2 {width: 75%}
 }
 
 
