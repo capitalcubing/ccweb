@@ -55,7 +55,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 2% 0% 15%">
+                           <div class="tile-1a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 2% 0% 15%">
                               <div class = "event-main">
                                  <div class="event-title">
                                     back
@@ -84,7 +84,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 0% 15% 15%;">
+                           <div class="tile-2a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 0% 15% 15%;">
                               <div class="event-main">
                                  <div class="event-title">
                                     SNU OPEN 2017 
@@ -130,7 +130,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:2% 0% 15% 0%">
+                           <div class="tile-3a back tile-gradient-overlay" style="overflow: hidden; border-radius:2% 0% 15% 0%">
                               <div class="event-main">
                                  <div class="event-title">
                                     back
@@ -152,7 +152,7 @@
                                  </div>-->
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 0% 15%">
+                           <div class="tile-4a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 0% 15%">
                               <div class="event-main">
                                  <div class="event-title">
                                     back
@@ -174,7 +174,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 15% 15%">
+                           <div class="tile-5a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 15% 15%">
                               <div class="event-main">
                                  <div class="event-title">
                                     back
@@ -194,7 +194,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 15% 0%">
+                           <div class="tile-6a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 15% 0%">
                               <div class = "event-main">
                                  <div class="event-title">
                                     back
@@ -214,7 +214,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 2% 0%">
+                           <div class="tile-7a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 2% 0%">
                               <div class="event-main">
                                  <div class="event-title">
                                     back
@@ -234,7 +234,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 0% 0%">
+                           <div class="tile-8a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 0% 0%">
                               <div class="event-main">
                                  <div class="event-title">
                                     back
@@ -254,7 +254,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 0% 2%">
+                           <div class="tile-9a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 0% 2%">
                               <div class="event-main">
                                  <div class="event-title">
                                     back
@@ -272,18 +272,27 @@
       <script>
          //this is for the random colour changes in the flipper front faces
          //add a new colour in the colours array and that will be done
-         var colours = ["#ffcc5c", "#96ceb4", "#8FD8D8", "#ff6f69"];
+         var colours = ["#ffcc5c", "#00FF00", "#8FD8D8", "#ff6f69"];
          ///Math.random() returns a random number between 0 (including) and 1(excluding).
          //Math.floor(x) returns the greatest integer less than or equal to x.
          document.getElementById("tile-1").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-1a").style.backgroundColor=document.getElementById("tile-1").style.backgroundColor;
          document.getElementById("tile-2").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-2a").style.backgroundColor=document.getElementById("tile-2").style.backgroundColor;
          document.getElementById("tile-3").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-3a").style.backgroundColor=document.getElementById("tile-3").style.backgroundColor;
          document.getElementById("tile-4").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-4a").style.backgroundColor=document.getElementById("tile-4").style.backgroundColor;
          document.getElementById("tile-5").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-5a").style.backgroundColor=document.getElementById("tile-5").style.backgroundColor;
          document.getElementById("tile-6").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-6a").style.backgroundColor=document.getElementById("tile-6").style.backgroundColor;
          document.getElementById("tile-7").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-7a").style.backgroundColor=document.getElementById("tile-7").style.backgroundColor;
          document.getElementById("tile-8").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-8a").style.backgroundColor=document.getElementById("tile-8").style.backgroundColor;
          document.getElementById("tile-9").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-9a").style.backgroundColor=document.getElementById("tile-9").style.backgroundColor;
          $(document).ready(function(){$('.nav').affix({offset: {top: 0} });});
          
       </script>
