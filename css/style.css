@@ -78,10 +78,8 @@ background:linear-gradient(
 
 .mybg-home{
 
-   background:linear-gradient(
-      rgba(0, 0, 148, 0.81), 
-      rgba(0, 0, 148, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
+   background-image:url(../images/ao.gif);
+
     height:100%;
     background-attachment: fixed;
     background-position: center;
