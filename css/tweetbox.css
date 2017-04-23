@@ -90,7 +90,9 @@ p {
   width: 600px;
   height: 600px;
   margin: 10px auto;
-  position: relative;
+   position: fixed;
+    top: -200px;
+    right: 0;
   -webkit-transform-origin: 50% 150px;
   -webkit-perspective: 1600px;
   -moz-perspective: 1600px;
@@ -151,7 +153,9 @@ p {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  position: absolute;
+  position: fixed;
+    top: 0;
+    right: 0;
 }
 .stage figure {
   display: block;
@@ -160,7 +164,7 @@ p {
   left: 150px;
   top: 150px;
   background-color: #eeeeee;
-  background: url(../images/white-noise.jpg);
+  background: url(../images/logos/ccblack.png);
   position: absolute;
   -webkit-backface-visibility: visible;
   -moz-backface-visibility: visible;
