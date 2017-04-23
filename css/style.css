@@ -3,10 +3,7 @@
 	font-family: 'Strasua';
     	src: url('fonts/Strasua.ttf'); 
     }
- #header
-{
-position: relative;
-}
+
 #logo, #footer
 
 {
@@ -21,7 +18,7 @@ margin-left: auto;
 { width: 870px;
   height: 127px;
   position: relative;
-  background: transparent url(../images/logos/ccwhite.png) no-repeat right;}
+  background: transparent url(../images/logos/ccwhite.png)}
 
 #logo #logo_text 
 { position: absolute; 
