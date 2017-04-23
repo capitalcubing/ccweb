@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Add icon library -->
+      <link href="css/tweetbox.css" media="screen, projection" rel="stylesheet" type="text/css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
       </link>
@@ -14,11 +15,12 @@
       </link>
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
       </link>
+      <script src="js/modernizr.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="js/slideshow.js"></script>
       <script src="js/countdown.js"></script>
-      <title> Capital Cubing </title>
+      <title align = "left"> Capital Cubing </title>
    </head>
    <body >
       <nav class="navbar navbar-default" role="navigation">
@@ -36,7 +38,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav nav-pills nav-stacked">
                   <!--  <ul class="nav nav-pills nav-stacked head-menu" data-spy="affix">-->
-                  <li class="left-nav nav-color1"><a class="left-nav" href="#"><span class="kek2"><img src="images/logos/ccwhite.png""></span></a></li>
+                  <li class="left-nav nav-color1"><a class="left-nav" href="#"><span class="kek2"><img src="images/logos/ccwhite.png"></span></a></li>
                   <li class="left-nav nav-color2"><a class="left-nav" href="#"><span class="kek">Home</span></a></li>
                   <li class="left-nav nav-color3"><a class="left-nav" href="about"><span class="kek">About</span></a></li>
                   <li class="left-nav nav-color6"><a class="left-nav" href="members"><span class="kek">Members</span></a></li>
@@ -48,11 +50,58 @@
          </div>
          <div class="col-lg-10 col-md-9 col-sm-8 mybg-home" style="padding-left: 10px;">
          <div class="parallax"></div>
-         <br><br><br>
+         <div class="fallback-stage"></div>
+    <div class="stage">
+      <div class="cube">
+        <figure class="back"></figure>
+        <figure class="top"></figure>
+        <figure class="bottom"></figure>
+        <figure class="left"></figure>
+        <figure class="right">
+            <p>The world's best selling magazine for web designers and developers since 1994</p>
+            <a href="https://twitter.com/netmag" class="twitter-follow-button" data-show-count="false">Follow @netmag</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </figure>
+        <figure class="front">
+        <p style="padding: 0; margin: 85px 25px 0 25px; width: 250px">
+          <a class="twitter-timeline" href="https://twitter.com/netmag" width="250" height="200" data-chrome="noheader noborders nofooter transparent" data-tweet-limit="1" data-widget-id="330710213227315200"></a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </p>
+        </figure>
+      </div>
+    </div>
          <div>
             <h1 class="header-cc"> CAPITAL CUBING </h1>
          </div>
          <br><br>
+            
+                 <div id="clockdiv">
+	<div id="days-container">
+    	<span id="days"></span>
+    	<div class="smalltext">Days</div>
+  	</div>
+  
+  	<div id="hours-container">
+    	<span id="hours"></span>
+    	<div class="smalltext">Hours</div>
+  	</div>
+  
+  	<div id="minutes-container">
+    	<span id="minutes"></span>
+    	<div class="smalltext">Minutes</div>
+  	</div>
+  
+  	<div id="seconds-container">
+    	<span id="seconds"></span>
+    	<div class="smalltext">Seconds</div>
+	</div>
+</div>
+<div id="anti-clockdiv">
+	anti-clockdiv be set to visible when the time is up in the countdown.
+</div>
+
+<br><br>
+            
          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                <div class="front tile-gradient-overlay">
@@ -108,27 +157,16 @@
                </div>
             </div>
          </div>
-         <div class="jumbotron text-center">
-            <p> Subscribe to Newsletter </p>
-            <form class="form-inline">
-               <div class="input-group">
-                  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                  <div class="input-group-btn">
-                     <button type="button" class="btn btn-danger">Subscribe</button>
-                  </div>
-               </div>
-               <br><br>
-            </form>
-         </div>
-         <br>
+             <br><br><br>
+
          <!-- Add font awesome icons -->
-         <a href="#" class="fa fa-facebook"></a>
-         <a href="#" class="fa fa-twitter"></a>
-         <a href="#" class="fa fa-google"></a>
-         <a href="#" class="fa fa-youtube"></a>
-         <a href="#" class="fa fa-instagram"></a>
-         <a href="#" class="fa fa-snapchat-ghost"></a>
-         <br><br><br>
+         <a target="_blank" href="#" class="fa fa-snapchat-ghost"></a>
+         <a target="_blank" href="#" class="fa fa-instagram"></a>
+         <a target="_blank" href="https://twitter.com/capital_cubing" class="fa fa-twitter"></a>
+         <a target="_blank" href="mailto:capitalcubing@gmail.com" class="fa fa-google"></a>
+         <a target="_blank" href="https://www.youtube.com/channel/UCOYC2ASD0kUVnTEWoUcZ6DA" class="fa fa-youtube"></a>
+         <a target="_blank" href="https://www.facebook.com/capitalcubing/" class="fa fa-facebook"></a>
+         <br><br><br><br><br>
          </div>
          </div>
          </div>
