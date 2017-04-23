@@ -127,6 +127,7 @@
       font-size: 200px;
   }
 
+@media(min-width:992px){
 #tile-1, .tile-1a{
     overflow: hidden; 
     border-radius:2% 0% 15% 0%;
@@ -170,4 +171,5 @@
 #tile-9, .tile-9a{
     overflow: hidden; 
     border-radius:15% 0% 2% 0%;
+}
 }
