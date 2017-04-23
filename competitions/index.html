@@ -49,6 +49,7 @@
          <div class="col-lg-10 col-md-9 col-sm-8 mybg-competitions" style="padding-left: 0px;">
           <h2 style="text-align:center; font-family:'Strasua';"> Past and Upcoming </h2>
                   <h1 style="text-align:center;"> COMPETITIONS </h1>
+                  <div>
                   <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                <div id="tile-1" class="front tile-gradient-overlay" style="overflow: hidden;border-radius:2% 0% 15% 0%">
@@ -223,16 +224,18 @@
                </div>
             </div>
          </div>
+         </div>
       </nav>
 <script>
          //this is for the random colour changes in the flipper front faces
          //add a new colour in the colours array and that will be done
-         // light green= 00FF00 , light blue = 8Fd8D8
+         // light green= 00FF00 , light blue = 8Fd8D8, light yellow = FFCC5C, light link=FF6F69
 
-         var colours = ["#ffcc5c", "#ff6f69","#229123","#109668","#FF1800","#228DFF"];
+         var colours = ["#0F9B0F","#F00000","#223DFF","#FFD200","#F83600"];
          ///Math.random() returns a random number between 0 (including) and 1(excluding).
          //Math.floor(x) returns the greatest integer less than or equal to x.
          document.getElementById("tile-1").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
+         //document.getElementById("tile-1").style.backgroundImage="linear-gradient( #36d1dc, #5b86e5 )";
          //document.getElementById("tile-1a").style.backgroundColor=document.getElementById("tile-1").style.backgroundColor;
          document.getElementById("tile-2").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
          //document.getElementById("tile-2a").style.backgroundColor=document.getElementById("tile-2").style.backgroundColor;
@@ -256,3 +259,4 @@
    </body>
 </html>
 
+         

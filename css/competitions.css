@@ -106,17 +106,6 @@
     transform: rotateY(-180deg);
 }
 
-
-.tile-gradient-overlay.c1{
-    background:pink;
-}
-.tile-gradient-overlay.c2{
-    background:green;
-}
-.tile-gradient-overlay.c3{
-    background:red;
-}
-
 .tile-gradient-overlay{
     background:    #D90026;
     }
@@ -124,16 +113,14 @@
     height:100%;
     width:100%;
     background-color: rgba(255,255,255,0.1);
-    color:#ffffff;
-        font-family: 'Strasua';
+        font-family: 'Arial';
+        color:#000000;
     font-size:33px;
     /*line-height:60px;*/
     text-align:center;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
         font-weight: bold;
-    text-shadow: 1px 1px #a6a6a6
-;
-
+    text-shadow: 1px 1px #a6a6a6;
 }
 
   .logo {
