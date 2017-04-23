@@ -78,10 +78,8 @@ background:linear-gradient(
 
 .mybg-home{
 
-   background:linear-gradient(
-      rgba(0, 0, 148, 0.81), 
-      rgba(0, 0, 148, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
+   background-image:url(../images/ao.gif);
+
     height:100%;
     background-attachment: fixed;
     background-position: center;
@@ -100,12 +98,20 @@ height:100%;
 	
 }
 
+.mybg-about{
+height:100%;
+  background-image:url(../images/ao.gif);
+	    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
 .mybg-blog{
 height:100%;
-background:linear-gradient(
-      rgba(0, 104, 255, 0.81), 
-      rgba(0, 104, 255, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
+  background-image:url(../images/ao.gif);
+
 	    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,10 +121,8 @@ background:linear-gradient(
 
 .mybg-compguide{
 height:100%;
-	 background:linear-gradient(
-      rgba(225, 0, 0, 0.81), 
-      rgba(225, 0, 0, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
+	  background-image:url(../images/ao.gif);
+
 	    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
