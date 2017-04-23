@@ -1,11 +1,11 @@
 @media(max-width:767px){
-.head-menu .left-nav{
+.left-nav{
   height:5vh;
   text-align: center;
   color:white;
 }
 
-.head-menu .kek{
+.kek{
   position:relative;
   top:0.25vh;
   font-size:1.7vh;
