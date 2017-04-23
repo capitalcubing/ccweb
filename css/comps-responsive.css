@@ -178,12 +178,12 @@
 
 #tile-11, #tile-11a{
     overflow: hidden; 
-    border-radius:0% 15% 0% 2%;
+    border-radius:2% 2% 2% 2%;
 }
 
 #tile-12, #tile-12a{
     overflow: hidden; 
-    border-radius:15% 0% 2% 0%;
+    border-radius:2% 2% 2% 2%;
 }
 }
 
