@@ -127,3 +127,47 @@
       font-size: 200px;
   }
 
+#tile-1, .tile-1a{
+    overflow: hidden; 
+    border-radius:2% 0% 15% 0%;
+}
+
+#tile-2, .tile-2a{
+    overflow: hidden; 
+    border-radius:0% 0% 15% 15%;
+}
+
+#tile-3, .tile-3a{
+    overflow: hidden; 
+    border-radius:0% 2% 0% 15%;
+}
+
+#tile-4, .tile-4a{
+    overflow: hidden; 
+    border-radius:0% 15% 15% 0%;
+}
+
+#tile-5, .tile-5a{
+    overflow: hidden; 
+    border-radius:15% 15% 15% 15%;
+}
+
+#tile-6, .tile-6a{
+    overflow: hidden; 
+    border-radius:15% 0% 0% 15%;
+}
+
+#tile-7, .tile-7a{
+    overflow: hidden; 
+    border-radius:0% 15% 0% 2%;
+}
+
+#tile-8, .tile-8a{
+    overflow: hidden; 
+    border-radius:15% 15% 0% 0%;
+}
+
+#tile-9, .tile-9a{
+    overflow: hidden; 
+    border-radius:15% 0% 2% 0%;
+}
