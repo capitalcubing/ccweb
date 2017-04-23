@@ -182,7 +182,7 @@ p {
   display: none;
 }
 .stage .front {
-  background: url(../images/ccblack.png);
+  background: url(../images/logos/ccblack.png);
     background-size: 300px 300px;
     background-repeat: no-repeat;
   -webkit-transform: translateZ(150px);
