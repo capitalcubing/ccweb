@@ -184,9 +184,10 @@
 .jumbotron {
   opacity: 0.9;
 
-    width: 80%;
+    width: 90%;
     height: 120px;
       padding: 10px;
+    margin: auto;
 
   }
 
