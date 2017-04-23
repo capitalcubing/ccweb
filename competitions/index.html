@@ -4,76 +4,75 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.css">
       </link>
       <link rel="stylesheet" type="text/css" href="../css/style.css">
       </link>
-      <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-      </link>
       <link rel="stylesheet" type="text/css" href="../css/competitions.css">
+      </link>
+      <link rel="stylesheet" type="text/css" href="../css/responsive.css">
       </link>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/slideshow.js"></script>
+      <script src="js/countdown.js"></script>
       <title> Capital Cubing </title>
    </head>
-   <body>
+   <body >
       <nav class="navbar navbar-default" role="navigation">
          <div class="container-fluid">
-            <div class="row">
-               <div class="nopad col-md-3 col-lg-2 col-sm-4">
-                  <div class="navbar-header">
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     </button>
-                  </div>
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                     <ul class="nav nav-pills nav-stacked head-menu">
-                        <li class="left-nav nav-color1"><a class="left-nav" href="../"><span class="kek2"><img src="../images/logos/ccwhite.png""></span></a></li>
-                        <li class="left-nav nav-color2"><a class="left-nav" href="../"><span class="kek">Home</span></a></li>
-                        <li class="left-nav nav-color3"><a class="left-nav" href="../about"><span class="kek">About</span></a></li>
-                        <li class="left-nav nav-color6"><a class="left-nav" href="../members"><span class="kek">Members</span></a></li>
-                        <li class="left-nav nav-color4"><a class="left-nav" href="#"><span class="kek">Competitions</span></a></li>
-                        <li class="left-nav nav-color5"><a class="left-nav" href="../blog"><span class="kek">Blog</span></a></li>
-                        <li class="left-nav nav-color6"><a class="left-nav" href="../compguide"><span class="kek">Competitor Guide</span></a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-10 col-md-9 col-sm-8 mybg-competitions" style="padding-left:0px">
-                  <h2> Past and Upcoming </h2>
+         <div class="row">
+         <div class="col-md-3 col-lg-2 col-sm-4">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav nav-pills nav-stacked">
+                  <!--  <ul class="nav nav-pills nav-stacked head-menu" data-spy="affix">-->
+                  <li class="left-nav nav-color1"><a class="left-nav" href="../"><span class="kek2"><img src="../images/logos/ccwhite.png""></span></a></li>
+                  <li class="left-nav nav-color2"><a class="left-nav" href="../"><span class="kek">Home</span></a></li>
+                  <li class="left-nav nav-color3"><a class="left-nav" href="../about"><span class="kek">About</span></a></li>
+                  <li class="left-nav nav-color6"><a class="left-nav" href="../members"><span class="kek">Members</span></a></li>
+                  <li class="left-nav nav-color4"><a class="left-nav" href="#"><span class="kek">Competitions</span></a></li>
+                  <li class="left-nav nav-color5"><a class="left-nav" href="../blog"><span class="kek">blog</span></a></li>
+                  <li class="left-nav nav-color6"><a class="left-nav" href="../compguide"><span class="kek">Competitor Guide</span></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-lg-10 col-md-9 col-sm-8 mybg-competitions" style="padding-left: 0px;">
+          <h2> Past and Upcoming </h2>
                   <h1> COMPETITIONS </h1>
                   <br><br><br>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-1" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:2% 0% 15% 0%">
-                              <div class = "event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-1a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 2% 0% 15%">
-                              <div class = "event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+         <br><br>
+                  <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-1" class="front tile-gradient-overlay" style="overflow: hidden;border-radius:2% 0% 15% 0%">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-2" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:0% 0% 15% 15%;">
-                              <div class="event-main">
-                                 <div class="event-title"> SNU OPEN 2017 </div>
-                                 <div class="event-body">
-                                    <br> 
-                                    <h4> Venue </h4>
+               </div>
+               <div class="tile-1a back tile-gradient-overlay" style="overflow: hidden; border-radius:2% 0% 15% 0%">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-2" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:0% 0% 15% 15%;">
+                  <div class="event-title">
+                           <h4> Venue </h4>
                                     <h5>Shiv Nadar University, Dadri</h5>
                                     <h4> Dates </h4>
                                     <h5> 8-9 April, 2017 </h5>
@@ -81,17 +80,11 @@
                                     <h5> 79 </h5>
                                     <h4> Winner </h4>
                                     <h5> Kunal Ox </h5>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-2a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 0% 15% 15%;">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    SNU OPEN 2017 
-                                 </div>
-                                 <br>
-                                 <div class="event-body">
-                                    <table align="center">
+                  </div>
+               </div>
+               <div class="tile-2a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 0% 15% 15%;">
+                  <div class="event-title">
+                      <table align="center">
                                        <tr>
                                           <td> Event </td>
                                           <td> Winner </td>
@@ -114,165 +107,131 @@
                                        </tr>
                                     </table>
                                     <a href="https://www.worldcubeassociation.org/competitions/SNUOpen2017" style="color:#FFDDDD"> View all results </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-3" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:0% 2% 0% 15%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-3a back tile-gradient-overlay" style="overflow: hidden; border-radius:2% 0% 15% 0%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');" >
-                        <div class="flipper" style="border-radius:0% 15% 15% 0%">
-                           <div id = "tile-4" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 15% 0%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                                 <!--<div class="event-body">
-                                 </div>-->
-                              </div>
-                           </div>
-                           <div class="tile-4a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 0% 15%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                                 <!--<div class="event-body">
-                                 </div>-->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper" >
-                           <div id = "tile-5" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 15% 15%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-5a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 15% 15%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-6" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 0% 15%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-6a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 15% 0%">
-                              <div class = "event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-7" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 0% 2%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-7a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 2% 0%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-8" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 0% 0%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-8a back tile-gradient-overlay" style="overflow: hidden; border-radius:15% 15% 0% 0%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 domp">
-                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                           <div id = "tile-9" class="front tile-gradient-overlay" style="overflow: hidden; border-radius:15% 0% 2% 0%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    front
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tile-9a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 15% 0% 2%">
-                              <div class="event-main">
-                                 <div class="event-title">
-                                    back
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                </div>
-               <br><br><br><br>
+            </div>
+         </div>
+         <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-3" class="front c3 tile-gradient-overlay" style="overflow: hidden; border-radius:0% 2% 0% 15%">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-3a back tile-gradient-overlay" style="overflow: hidden; border-radius:0% 2% 0% 15%">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+                  <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-4" class="front tile-gradient-overlay">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-4a back tile-gradient-overlay">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-5" class="front tile-gradient-overlay">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-5a back tile-gradient-overlay">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-6" class="front c3 tile-gradient-overlay">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-6a back tile-gradient-overlay">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+                  <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-7" class="front tile-gradient-overlay">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-7a back tile-gradient-overlay">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-8" class="front tile-gradient-overlay">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-8a back tile-gradient-overlay">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flip-container col-lg-4 col-md-4 col-sm-6 col-xs-12" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+               <div id="tile-9" class="front c3 tile-gradient-overlay">
+                  <div class="event-title">
+                     LATEST ANNOUNCEMENTS
+                     <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
+                     </h5>
+                  </div>
+               </div>
+               <div class="tile-9a back tile-gradient-overlay">
+                  <div class="event-title">
+                     PREVIOUS ANNOUNCEMENTS
+                  </div>
+               </div>
             </div>
          </div>
       </nav>
-      <script>
+<script>
          //this is for the random colour changes in the flipper front faces
          //add a new colour in the colours array and that will be done
-         var colours = ["#ffcc5c", "#00FF00", "#8FD8D8", "#ff6f69"];
+         // light green= 00FF00 , light blue = 8Fd8D8
+
+         var colours = ["#ffcc5c", "#ff6f69","#229123","#109668","#FF1800","#228DFF"];
          ///Math.random() returns a random number between 0 (including) and 1(excluding).
          //Math.floor(x) returns the greatest integer less than or equal to x.
          document.getElementById("tile-1").style.backgroundColor=colours[Math.floor((Math.random() * colours.length))];
@@ -298,8 +257,4 @@
       </script>
    </body>
 </html>
-
-    Contact GitHub API Training Shop Blog About 
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
 
