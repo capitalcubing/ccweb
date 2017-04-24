@@ -108,6 +108,8 @@
 
 .tile-gradient-overlay{
     background:    #D90026;
+    padding-left:2%;
+    padding-right:2%;
     }
 .event-title{
    /* height:100%;
