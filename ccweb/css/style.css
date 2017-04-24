@@ -1,3 +1,15 @@
+/* Set-up Strasua font and use it for nav-bar and home-page header */
+@font-face {
+  font-family: 'Strasua';
+      src: url('fonts/Strasua.ttf'); 
+    }
+
+.header-cc  {
+  font-family: 'Strasua';
+  color:white;
+      text-shadow: 2px 2px #a6a6a6;
+      text-align: center;
+}
 
 .left-nav {
 	font-family:'Strasua';
