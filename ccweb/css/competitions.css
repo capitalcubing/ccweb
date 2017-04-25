@@ -7,25 +7,14 @@
     perspective: 1000;
     -ms-transform: perspective(1000px);
     -moz-transform: perspective(1000px);
+    transform: perspective(1000px);
+    -webkit-transform: perspective(1000px);
     -moz-transform-style: preserve-3d; 
     -ms-transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d; 
+    transform-style: preserve-3d; 
 }
 
-.flip-container:hover .back, .flip-container.hover .back{
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-}
-
-.flip-container:hover .front, .flip-container.hover .front {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-        
 .flip-container{
     display:inline-block;
     height: 380px;
@@ -34,6 +23,26 @@
     margin-bottom: 10px;
     margin-top:10px;
 }
+.flip-container:hover .back, .flip-container.hover .back{
+    width:100%;
+    height:380px;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+    width:100%;
+    height:380px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+        
 
 
  
@@ -61,6 +70,7 @@
     position: relative;
     margin-left:10px;
     margin-right:10px;
+    height:380px;
 }
 
 .front, .back {
@@ -87,14 +97,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius:10px;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
+    border-radius:10px;
 }
 
 .front {
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
     z-index: 2;
 }
 
@@ -108,8 +121,9 @@
 
 .tile-gradient-overlay{
     background:    #D90026;
-    padding-left:4%;
-    padding-right:4%;
+    padding-left:5%;
+    padding-right:5%;
+    height:380px;
     }
 .event-title{
    /* height:100%;
