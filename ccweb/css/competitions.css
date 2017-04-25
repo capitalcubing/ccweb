@@ -59,8 +59,8 @@
     transform-style: preserve-3d;
 
     position: relative;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .front, .back {
@@ -108,8 +108,8 @@
 
 .tile-gradient-overlay{
     background:    #D90026;
-    padding-left:2%;
-    padding-right:2%;
+    padding-left:4%;
+    padding-right:4%;
     }
 .event-title{
    /* height:100%;
@@ -118,6 +118,7 @@
         font-family: 'Arial';
         color:#000000;
     font-size:33px;
+    line-height:40px;
     /*line-height:60px;*/
     text-align:center;
     /*text-transform:uppercase;*/
@@ -158,4 +159,11 @@
     text-align: center;
     background-color: lightseagreen;
     color: white;
+}
+
+.event-body>h5>a
+{
+    color:black;
+    font-weight:bold;
+    text-decoration:underline;
 }

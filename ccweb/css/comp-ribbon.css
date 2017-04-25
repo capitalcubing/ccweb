@@ -31,8 +31,6 @@
 /* Different positions */
 
 .corner-ribbon.top-left{
-  top: 35px;
-  left: -15px%;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
@@ -49,3 +47,35 @@
 .corner-ribbon.red{background: #e43;}
 .corner-ribbon.orange{background: #e82;}
 .corner-ribbon.yellow{background: #ec0;}
+
+@media(min-width:1200px){
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -55px;
+}
+}
+
+@media(min-width:992px) and (max-width:1199px){
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -65px;
+line-height: 35px;
+}
+}
+
+@media(min-width:768px) and (max-width:991px){
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -65px;
+line-height: 35px;
+}
+}
+
+@media(min-width:767px){
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -55px;
+line-height: 35px;
+
+}
+}
