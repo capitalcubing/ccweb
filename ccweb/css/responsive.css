@@ -89,3 +89,24 @@
       margin-right: 20px;
     }
 }
+
+@media(min-width:538px) and (max-width:767px){
+      .header-cc{
+      font-size:60px;
+    }
+
+}
+
+@media(max-width:537px){
+      .header-cc{
+      font-size:40px;
+    }
+
+}
+
+@media(min-width:768px){
+      .header-cc{
+      font-size:80px;
+    }
+
+}
