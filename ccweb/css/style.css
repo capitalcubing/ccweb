@@ -286,7 +286,6 @@ article {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height .01s ease;
-       -o-transition: height .01s ease;
-          transition: height .01s ease;
+          transition: height 0s ease;
 }
+
