@@ -15,6 +15,8 @@
       </link>
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
       </link>
+      <link rel="stylesheet" type="text/css" href="css/counter.css">
+      </link>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="js/slideshow.js"></script>
@@ -53,9 +55,9 @@
          <div>
             <h1 class="header-cc"> CAPITAL CUBING </h1>
          </div>
-         <br><br>
-            
-                 <div id="clockdiv">
+  
+  <!--         
+  <div id="clockdiv">
 	<div id="days-container">
     	<span id="days"></span>
     	<div class="smalltext">Days</div>
@@ -79,12 +81,29 @@
 <div id="anti-clockdiv">
 	anti-clockdiv be set to visible when the time is up in the countdown.
 </div>
+-->
 
-<br><br>
+            <!--The css for this is in counter.css-->
+            <!--The js for this is in counter.js included at the end of this page-->
+            <div class="wrapper1">
+            <div class="counter col_fourth">
+            <i class="fa-2x"></i>
+            <h4 class="timer1 count-title count-number" data-to="13" data-speed="1000"></h4>
+            <p class="count-text ">Competitions</p>
+            </div>
+            <div class="counter col_fourth end">
+            <i class="fa-2x"></i>
+            <h4 class="timer1 count-title count-number" data-to="1526" data-speed="1000"></h4>
+            <p class="count-text ">Participation</p>
+            </div>
+          </div>
+
+
+<br>
             
          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
-               <div class="front tile-gradient-overlay">
+               <div class="front tile-gradient-overlay" style="overflow:hidden;">
                   <div class="event-title">
                      NCRO OPEN 2017
                      <br> <br> 
@@ -99,7 +118,7 @@
                      </h5>
                   </div>
                </div>
-               <div class="back tile-gradient-overlay">
+               <div class="back tile-gradient-overlay" style="overflow:hidden;">
                   <div class="event-title">
                      INFORMATION
                   </div>
@@ -108,14 +127,14 @@
          </div>
          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
-               <div class="front tile-gradient-overlay">
+               <div class="front tile-gradient-overlay" style="overflow:hidden;">
                   <div class="event-title">
                      LATEST ANNOUNCEMENTS
                      <h5> <br><br><br> 1. Lakshay Modi is Nub <br><br>2. CC team working on new site <br><br>3. New Competition announced <br><br>4. more announcements <br><br> 5. more announcements
                      </h5>
                   </div>
                </div>
-               <div class="back tile-gradient-overlay">
+               <div class="back tile-gradient-overlay" style="overflow:hidden;">
                   <div class="event-title">
                      PREVIOUS ANNOUNCEMENTS
                   </div>
@@ -124,13 +143,13 @@
          </div>
          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
-               <div class="front tile-gradient-overlay">
+               <div class="front tile-gradient-overlay" style="overflow:hidden;">
                   <div class="event-title">
                      CHECK OUT OUR NEW TIMER <br><br> <br> 
                      <img src="images/3x3cube1.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
                   </div>
                </div>
-               <div class="back tile-gradient-overlay">
+               <div class="back tile-gradient-overlay" style="overflow:hidden;">
                   <div class="event-title">
                      FEATURES
                   </div>
@@ -168,6 +187,7 @@
                document.getElementById("anti-clockdiv").style.display = 'inline-block';
             }
       </script>
+      <script src="js/counter.js"></script>
    </body>
 </html>
 
