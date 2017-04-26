@@ -150,25 +150,25 @@
 }
 
 
-#customers {
+.event-results {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: auto;
-    font-size: 13px;
-        font-size: 1vw;
+    width:100%;
+    font-size:13px;
+    line-height:25px;
 
 }
 
-#customers td, #customers th {
+.event-results td, .event-results th {
     border: 1px solid #ddd;
     
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+.event-results tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+.event-results tr:hover {background-color: #ddd;}
 
-#customers th {
+.event-results th {
    
     text-align: center;
     background-color: lightseagreen;
@@ -180,4 +180,11 @@
     color:black;
     font-weight:bold;
     text-decoration:underline;
+}
+
+@media(max-width:1199px)
+{
+.result-lg{
+    display:none;
+}
 }
