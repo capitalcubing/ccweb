@@ -151,10 +151,9 @@
 
 
 .event-results {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-top:4%;
     border-collapse: collapse;
     width:100%;
-    font-size:13px;
     line-height:25px;
 
 }
@@ -162,7 +161,7 @@
 .event-results td, .event-results th {
     border: 1px solid #ddd;
     
-}
+}   
 
 .event-results tr:nth-child(even){background-color: #f2f2f2;}
 
@@ -175,16 +174,32 @@
     color: white;
 }
 
-.event-body>h5>a
+.event-body>h5>a, .result-link
 {
     color:black;
     font-weight:bold;
     text-decoration:underline;
+    text-align:center;
 }
 
-@media(max-width:1199px)
+
+@media(max-width:1199px) and (min-width:768px)
 {
 .result-lg{
     display:none;
+}
+}
+
+@media(max-width:767px)
+{
+.result-lg{
+    display:table-cell;
+}
+}
+
+@media(min-width:1200px)
+{
+.result-lg{
+    display:table-cell;
 }
 }
