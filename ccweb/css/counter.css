@@ -44,3 +44,20 @@
 	display: table; 
 	color: #4ad1e5; 
 }
+
+/* CSS for testing various color combinations */
+.counter-1{
+	background-color:#111111;
+}
+
+.mybg-home-1{
+background:linear-gradient(
+      rgba(75, 0, 235, 0.81), 
+      rgba(75, 0, 235, 0.81)
+    ),url(../images/slider/complexity2016_group.jpg);
+
+}
+
+.tilecolor-1{
+	background:#412311;
+}
