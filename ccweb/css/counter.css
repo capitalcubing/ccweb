@@ -46,18 +46,139 @@
 }
 
 /* CSS for testing various color combinations */
-.counter-1{
-	background-color:#111111;
-}
-
 .mybg-home-1{
 background:linear-gradient(
-      rgba(75, 0, 235, 0.81), 
-      rgba(75, 0, 235, 0.81)
-    ),url(../images/slider/complexity2016_group.jpg);
-
+      rgba(183, 28, 28, 0.51), 
+      rgba(183, 28, 28, 0.81)
+    ),url(../images/ao.gif);
 }
 
 .tilecolor-1{
-	background:#412311;
+	background:#C62828;
 }
+
+.counter-1{
+	background-color:#D32F2F;
+}
+
+
+.mybg-home-2{
+background:linear-gradient(
+      rgba(136, 14, 79, 0.51), 
+      rgba(136, 14, 79, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-2{
+	background:#AD1457;
+}
+
+.counter-2{
+	background-color:#C2185B;
+}
+
+.mybg-home-3{
+background:linear-gradient(
+      rgba(49,27,146, 0.51), 
+      rgba(49,27,146, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-3{
+	background:#4527A0;
+}
+
+.counter-3{
+	background-color:#512DA8;
+}
+
+.mybg-home-4{
+background:linear-gradient(
+      rgba(13,71,161, 0.51), 
+      rgba(13,71,161, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-4{
+	background:#1565C0;
+}
+
+.counter-4{
+	background-color:#1976D2;
+}
+
+.mybg-home-5{
+background:linear-gradient(
+      rgba(5,23,155, 0.51), 
+      rgba(5,23,155, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-5{
+	background:#0277BD;
+}
+
+.counter-5{
+	background-color:#0288D1;
+}
+
+.mybg-home-6{
+background:linear-gradient(
+      rgba(0,77,64, 0.51), 
+      rgba(0,77,64, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-6{
+	background:#00695C;
+}
+
+.counter-6{
+	background-color:#00796B;
+}
+
+.mybg-home-7{
+background:linear-gradient(
+      rgba(130,119,23, 0.51), 
+      rgba(130,119,23, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-7{
+	background:#9E9D24;
+}
+
+.counter-7{
+	background-color:#AFB42B;
+}
+
+.mybg-home-8{
+background:linear-gradient(
+      rgba(38,50,56, 0.51), 
+      rgba(38,50,56, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-8{
+	background:#3747AF;
+}
+
+.counter-8{
+	background-color:#455A64;
+}
+
+.mybg-home-9{
+background:linear-gradient(
+      rgba(255,111,0, 0.51), 
+      rgba(255,111,0, 0.81)
+    ),url(../images/ao.gif);
+}
+
+.tilecolor-9{
+	background:#FF8F00;
+}
+
+.counter-9{
+	background-color:#FFA000;
+}
+
