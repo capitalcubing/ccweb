@@ -40,9 +40,9 @@
 }
 	
 	h3 {
-		font-size: 40px;
-		color: white;
-		font-family: "Arial", cursive, sans-serif;
+	font-family: 'Strasua';
+		font-size: 30px;
+		color:white
 	}
 	
   h4 {
@@ -60,6 +60,15 @@
     color: white;
   	font-family: "Arial", cursive, sans-serif;
         text-align: center;
+
+
+  }
+
+  p3 {
+     font size: 40px;
+    color: white;
+  	font-family: "Arial", cursive, sans-serif;
+        text-align: left;
 
 
   }
