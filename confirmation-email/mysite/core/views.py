@@ -6,9 +6,12 @@ from django.shortcuts import render, redirect
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.template.loader import render_to_string
+from django.core.mail import EmailMessage
+
 
 from mysite.core.forms import SignUpForm
 from mysite.core.tokens import account_activation_token
+import smtplib
 
 
 @login_required
@@ -33,6 +36,24 @@ def signup(request):
                 'token': account_activation_token.make_token(user),
             })
             user.email_user(subject, message)
+            # PArt above this line does not work on localhost and prints to console
+            to = user.email
+            gmail_user = 'capitalcubing@gmail.com'
+            gmail_pwd = 'cubingsaviour'
+            smtpserver = smtplib.SMTP("smtp.gmail.com",587)
+            smtpserver.ehlo()
+            smtpserver.starttls()
+            smtpserver.ehlo
+            smtpserver.login(gmail_user, gmail_pwd)
+            header = 'To:' + to + '\n' + 'From: ' + gmail_user + '\n' + 'Subject:testing \n'
+            print header
+            msg = header + '\n this is test msg from mkyong.com \n\n'
+            msg+="<body> <p> Rara </p> </body>"
+            msg=message
+            smtpserver.sendmail(gmail_user, to, msg)
+            print 'done!'
+            smtpserver.close
+
 
             return redirect('account_activation_sent')
     else:
