@@ -4,6 +4,16 @@
       src: url('fonts/Strasua.ttf'); 
     }
 
+@font-face {
+  font-family: 'Forque';
+      src: url('fonts/Forque.ttf'); 
+    }
+
+@font-face {
+  font-family: 'penna';
+      src: url('fonts/penna.otf'); 
+    }
+
 .header-cc  {
   font-family: 'Strasua';
   color:white;
@@ -40,7 +50,7 @@
 }
 	
 	h3 {
-	font-family: 'Strasua';
+	font-family: 'Forque';
 		font-size: 30px;
 		color:white
 	}
