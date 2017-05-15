@@ -51,8 +51,9 @@
 	
 	h3 {
 	font-family: 'penna';
-		font-size: 30px;
-		color:white
+		font-size: 40px;
+		color:white;
+	       font-weight: bold;
 	}
 	
   h4 {
