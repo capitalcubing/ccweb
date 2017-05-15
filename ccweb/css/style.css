@@ -58,7 +58,7 @@
   h4 {
     font size: 15px;
     color: white;
-  	font-family: "Arial", cursive, sans-serif;
+  	font-family: "monospace";
         text-align: center;
     text-decoration: underline;
         font-weight: bold;
@@ -68,7 +68,7 @@
   h5 {
     font size: 15px;
     color: white;
-  	font-family: "Arial", cursive, sans-serif;
+  	font-family: "monospace";
         text-align: center;
 
 
@@ -77,7 +77,7 @@
   p3 {
      font size: 40px;
     color: white;
-  	font-family: "Arial", cursive, sans-serif;
+  	font-family: "monospace";
       text-align: justify;
             text-justify: inter-word;
   }
