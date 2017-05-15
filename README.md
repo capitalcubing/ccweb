@@ -11,6 +11,5 @@ go to ccweb directory
 4. contact form functionality
 5. newsletter functionality (similar to submitting email address in a contact form)
 6. Sponsor page design + responsive
-7. Competitior Guide page Font (Remove STrasua from subheadings)
-8. Competition webpage optional?
+7. Competition webpage optional?
 
