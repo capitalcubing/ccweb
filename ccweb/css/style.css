@@ -152,6 +152,7 @@ height:100%;
 
 .left-nav{
   line-height:1.5em;
+	    position: fixed;
 }
 .intro{
   background-color:#DADFCE;
@@ -220,8 +221,7 @@ height:100%;
 .navbar{
   margin-bottom: 0px;
   border: 0px solid transparent;
-	    position: fixed;
-left: 0px;
+
 }
 
 .nav-pills > li + li {
@@ -293,8 +293,6 @@ div.comp-box {
     list-style-type: none;
     padding: 0;
     text-decoration: none;
-	     position: fixed;
-
 }
 
 article {
