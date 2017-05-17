@@ -93,7 +93,7 @@
     transform: rotateY(-180deg);
 }
 .tile-gradient-overlay{
-    background:    #D90026;
+    background:    #263238;
     }
 .event-title{
     height:100%;
@@ -104,10 +104,7 @@
     font-size:33px;
     /*line-height:60px;*/
     text-align:center;
-    text-transform:uppercase;
         font-weight: bold;
-    text-shadow: 1px 1px #a6a6a6
-;
 
 }
 
