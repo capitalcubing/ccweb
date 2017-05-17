@@ -1,5 +1,6 @@
 /* for member page*/
 p {
+font-family: 'Open Sans';
 font-size: 11px;
 color: white;
 text-align: center;
@@ -19,7 +20,7 @@ h1
 h2
 {
   color:white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Open Sans';
   font-size: 20px;
 }
 
