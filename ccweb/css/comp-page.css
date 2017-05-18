@@ -1,6 +1,5 @@
 body {
     background-image: url(../images/ao.gif);
-    overflow-x: hidden; 
     padding-top: 100px;
 }
 
@@ -20,7 +19,7 @@ footer {
 .navbar.navbar-fixed-top.fixed-theme {
     background-color: #222;
     border-color: #080808;
-    box-shadow: 0 0 5px rgba(0,0,0,.8);
+
 }
 
 .navbar-brand.fixed-theme {
