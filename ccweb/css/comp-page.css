@@ -49,12 +49,8 @@ navbar-wrapper {
 
 
 
-/* BOOTSTRAP 3.x GLOBAL STYLES
+/* CAROUSEL
 -------------------------------------------------- */
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
 
 
 
@@ -77,14 +73,16 @@ body {
 
 /* Carousel base class */
 .carousel {
+  padding-bottom: 40px;
+  color: #5a5a5a;
   margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
   z-index: 1;
 }
 
-/* Declare heights because of positioning of img element */
+
 .carousel .item {
   height: 400px;
   background-color:#555;
@@ -98,16 +96,12 @@ body {
 
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
 
-/* Pad the edges of the mobile views a bit */
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/* Center align the text within the three columns below the carousel */
+ 
 .marketing .col-lg-4 {
   text-align: center;
   margin-bottom: 20px;
@@ -120,30 +114,21 @@ body {
   margin-right: 10px;
 }
 
-
-/* Featurettes
-------------------------- */
-
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0; 
 }
 .featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  padding-top: 120px;
 }
 .featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-top: -120px; 
 }
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
   margin-right: 40px;
 }
 .featurette-image.pull-right {
   margin-left: 40px;
 }
-
-/* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
   font-weight: 300;
@@ -151,10 +136,6 @@ body {
   letter-spacing: -1px;
 }
 
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
 
 @media (min-width: 768px) {
 
