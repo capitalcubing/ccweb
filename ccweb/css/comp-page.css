@@ -171,6 +171,6 @@ navbar-wrapper {
     padding: 8px;
     background: green;
 }
-.table.th {
+.table th {
     background-color: red;
 }
