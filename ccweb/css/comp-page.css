@@ -169,8 +169,12 @@ navbar-wrapper {
     width: 75%;
     height: 200px
     padding: 8px;
-    background: green;
+    border: 3px solid black
 }
-.table th {
-    background-color: red;
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: white}
+
+th {
+    background-color: green;
 }
+    color: white;
