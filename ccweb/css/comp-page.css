@@ -1,11 +1,10 @@
 body {
-    background-image: url(../images/ao.gif)
+    background-image: url(../images/ao.gif);
     overflow-x: hidden; 
-}
-
-body {
     padding-top: 100px;
 }
+
+
 footer {
     padding: 30px 0;
 }
