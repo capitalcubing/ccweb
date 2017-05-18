@@ -163,3 +163,12 @@ navbar-wrapper {
   }
 
 }
+
+  /* Table for Events */
+.col1 {display: none; }
+.col2 {display: none; }
+.col3 {display: none; }
+
+table.show1 .col1 { display: table-cell; }
+table.show2 .col2 { display: table-cell; }
+table.show3 .col3 { display: table-cell; }
