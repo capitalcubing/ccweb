@@ -40,7 +40,7 @@ footer {
     }
 
 navbar-wrapper {
-  position: absolute;
+  position: center;
   top: 0;
   left: 0;
   right: 0;
@@ -109,10 +109,12 @@ navbar-wrapper {
 }
 .marketing h2 {
   font-weight: normal;
+    color:black;
 }
 .marketing .col-lg-4 p {
   margin-left: 10px;
   margin-right: 10px;
+    color: black;
 }
 
 .featurette-divider {
@@ -135,6 +137,7 @@ navbar-wrapper {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+    color: black;
 }
 
 
@@ -161,6 +164,7 @@ navbar-wrapper {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+      color: black;
   }
 
 }
