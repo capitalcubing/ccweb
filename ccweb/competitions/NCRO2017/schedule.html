@@ -322,9 +322,10 @@ function myFunction() {
     td = tr[i].getElementsByTagName("td")[2],[3];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
+        tr[i].style.display = "" +  "document.getElementById("myTable").day";
+;
       } else {
-        tr[i].style.display = "none";
+        tr[i].style.display = "document.getElementById("myTable").day";
       }
     }       
   }
