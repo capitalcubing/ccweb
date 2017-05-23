@@ -1,11 +1,6 @@
 $(document).ready(function(){
 
-/**
- * This object controls the nav bar. Implement the add and remove
- * action over the elements of the nav bar that we want to change.
- *
- * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
- */
+//for navbar
 var myNavBar = {
 
     flagAdd: true,
@@ -35,20 +30,13 @@ var myNavBar = {
 
 };
 
-/**
- * Init the object. Pass the object the array of elements
- * that we want to change when the scroll goes down
- */
 myNavBar.init(  [
     "header",
     "header-container",
     "brand"
 ]);
 
-/**
- * Function that manage the direction
- * of the scroll
- */
+
 function offSetManager(){
 
     var yOffset = 0;
@@ -63,23 +51,17 @@ function offSetManager(){
 
 }
 
-/**
- * bind to the document scroll detection
- */
 window.onscroll = function(e) {
     offSetManager();
 }
 
-/**
- * We have to do a first detectation of offset because the page
- * could be load with scroll down set.
- */
 offSetManager();
 });
 //for schedule
+$(document).ready(function(){
+
     var activeSystemClass = $('.list-group-item.active');
 
-    //something is entered in search form
     $('#system-search').keyup( function() {
        var that = this;
         // affect all table rows on in systems table
@@ -88,7 +70,6 @@ offSetManager();
         $('.search-sf').remove();
         tableRowsClass.each( function(i, val) {
         
-            //Lower text for case insensitive
             var rowText = $(val).text().toLowerCase();
             var inputText = $(that).val().toLowerCase();
             if(inputText != '')
@@ -115,7 +96,6 @@ offSetManager();
                 tableRowsClass.eq(i).show();
             }
         });
-        //all tr elements are hidden
         if(tableRowsClass.children(':visible').length == 0)
         {
             tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No entries found.</td></tr>');
