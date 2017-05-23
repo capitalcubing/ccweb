@@ -57,11 +57,11 @@ window.onscroll = function(e) {
 
 offSetManager();
 });
-//for schedule
-$(document).ready(function(){
 
+$(document).ready(function() {
     var activeSystemClass = $('.list-group-item.active');
 
+    //something is entered in search form
     $('#system-search').keyup( function() {
        var that = this;
         // affect all table rows on in systems table
@@ -70,6 +70,7 @@ $(document).ready(function(){
         $('.search-sf').remove();
         tableRowsClass.each( function(i, val) {
         
+            //Lower text for case insensitive
             var rowText = $(val).text().toLowerCase();
             var inputText = $(that).val().toLowerCase();
             if(inputText != '')
@@ -96,6 +97,7 @@ $(document).ready(function(){
                 tableRowsClass.eq(i).show();
             }
         });
+        //all tr elements are hidden
         if(tableRowsClass.children(':visible').length == 0)
         {
             tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No entries found.</td></tr>');
