@@ -14,6 +14,16 @@
       src: url('fonts/penna.otf'); 
     }
 
+    @font-face {
+  font-family: 'molot';
+      src: url('fonts/Molot.otf'); 
+    }
+
+@font-face {
+  font-family: 'Elianto';
+      src: url('fonts/Elianto-Regular.ttf'); 
+    }
+
 .header-cc  {
   font-family: 'Strasua';
   color:white;
