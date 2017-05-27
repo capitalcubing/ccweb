@@ -20,6 +20,8 @@
       </link>
       <link rel="stylesheet" type="text/css" href="css/counter.css">
       </link>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+ 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="js/slideshow.js"></script>
@@ -210,13 +212,41 @@
 
 <!-End mc_embed_signup-->
 
-<form action="https://formspree.io/capitalcubing@gmail.com"
-      method="POST">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form> 
 
 
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbwIvInszqH736ljJoxzoyPbhcZ_OWWdEZHZd28Po4qjD3rN-7M/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="What your Mom calls you" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em>. We will keep you updated!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
 
 <br><br>
 
@@ -252,6 +282,7 @@
             }
       </script>
       <script src="js/counter.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
    </body>
 </html>
 
