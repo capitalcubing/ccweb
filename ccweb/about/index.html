@@ -138,16 +138,32 @@ function test_input($data) {
 <br><br>    
 
 <div align="center" >
-  <form class="pure-form">
+  <form id="gform" method="POST" class="pure-form"
+  action="https://script.google.com/macros/s/AKfycbyL0PDA4mj4K7ztBO3pW5vrugQBfeRzbJQP4ey_NEdyjy-ZaBc/exec">
+    <!-- change the form action to your script url -->
         <fieldset class="pure-group">
-            <input type="text" class="pure-input-1-2" placeholder="Name"><br>
-            <input type="email" class="pure-input-1-2" placeholder="Email" required><br>
-            <input type="text" class="pure-input-1-2" placeholder="Phone Number"><br>
-            <textarea class="pure-input-1-2" placeholder="Comments" required></textarea>
+            <input id="name" name="name" type="text" class="pure-input-1-2" placeholder="Name"><br>
+            <input type="email" name="email" id="email" class="pure-input-1-2" placeholder="yourname@email.com" required>      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+ <br>
+            <input type="text" id="contact" name="contact" class="pure-input-1-2" placeholder="Phone Number"><br>
+            <textarea class="pure-input-1-2" placeholder="Comments" id="message" name="message" required></textarea>
         </fieldset>
         <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Submit</button>
     </form>
   </div>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em>. We will contact you within 24 hours.</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
     <!--<p> Name:  <input type="text" name="name" value=""> 
     <span class="error">* <?php echo $nameErr;?></span></p>
     <br><br>
