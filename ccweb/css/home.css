@@ -94,6 +94,12 @@
 }
 .tile-gradient-overlay{
     background-image: url("../images/Don'tStop,KeepGOING (1).png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     }
 .event-title{
     height:100%;
