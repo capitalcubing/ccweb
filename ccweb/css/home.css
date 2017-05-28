@@ -93,7 +93,7 @@
     transform: rotateY(-180deg);
 }
 .tile-gradient-overlay{
-    background: url("Don'tStop,KeepGOING (1).png");
+    background-image: url("../images/Don'tStop,KeepGOING (1).png");
     }
 .event-title{
     height:100%;
