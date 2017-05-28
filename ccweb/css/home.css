@@ -104,6 +104,11 @@
 	height:400px;
 }
 
+.img-back{
+	background-image: url("../images/Don'tStop,KeepGOING (3).png");
+  	width:300px;
+	height:400px;
+}
 .event-title{
     height:100%;
     width:100%;
