@@ -318,3 +318,9 @@ article {
   overflow: hidden;
 }
 
+.collapsing {
+  -webkit-transition: height .15s ease;
+       -o-transition: height .15s ease;
+          transition: height .15s ease;
+}
+
