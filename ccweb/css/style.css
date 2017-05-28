@@ -316,6 +316,5 @@ article {
   position: relative;
   height: 0;
   overflow: hidden;
-          transition: height 0s ease;
 }
 
