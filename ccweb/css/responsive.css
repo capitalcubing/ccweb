@@ -110,3 +110,17 @@
     }
 
 }
+
+@media (max-width: 767px) {
+  .nav-stacked.affix {
+    position: static;
+    width: auto;
+    top:auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-stacked.affix {
+    offset-top:0;
+  }
+}
