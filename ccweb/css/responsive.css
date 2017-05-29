@@ -12,9 +12,9 @@
 }
 
 .kek2 img{
-  height:2.5vh;
+  height:3.5vh;
 }
-}
+
 
 @media(min-width:768px){
 .left-nav{
@@ -27,7 +27,7 @@
 .kek2 img{
   position:relative;
   top:3vh;
-  height:8.7vh;
+  height:9.7vh;
 }
 
 .kek{
