@@ -145,6 +145,14 @@ height:100%;
     background-size: cover;
 }
 
+.mybg-members{
+height:100%;
+    background-image: url(../images/e6fba9003f45e04f81d9dd2c0808c031.jpg);
+	  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .mybg-compguide{
 height:100%;
