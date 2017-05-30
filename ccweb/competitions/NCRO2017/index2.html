@@ -280,6 +280,8 @@ input[type='radio']:checked + section {
     width: 80%; display: block;
     margin: auto;">
 
+    
+
       <label for="home"></label>
     </section>
     <input type="radio" name="tab" id="about"/>
@@ -416,7 +418,118 @@ input[type='radio']:checked + section {
     </section>
      <input type="radio" name="tab" id="registration"/>
     <section class="registration">
-      <h1>Contact us</h1>
+      <h1>Contact us</h1>		  
+<?php
+		  
+// define variables and set to empty values
+		  
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed"; 
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+    
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+      $websiteErr = "Invalid URL"; 
+    }
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+	<br><br><br>  
+<!--<p><span class="error">* required field.</span></p>-->
+<br><br>    
+
+<div align="center" >
+  <form id="gform" method="POST" class="pure-form"
+  action="https://script.google.com/macros/s/AKfycbyL0PDA4mj4K7ztBO3pW5vrugQBfeRzbJQP4ey_NEdyjy-ZaBc/exec">
+    <!-- change the form action to your script url -->
+        <fieldset class="pure-group">
+            <input id="name" name="name" type="text" class="pure-input-1-2" placeholder="Name" required><br>
+            <input type="email" name="email" id="email" class="pure-input-1-2" placeholder="yourname@email.com" required>      
+            <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+ <br>
+            <input type="text" id="contact" name="contact" class="pure-input-1-2" placeholder="Phone Number"><br>
+            <textarea class="pure-input-1-2" placeholder="Comments" id="message" name="message" required></textarea>
+        </fieldset>
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em>. We will contact you within 24 hours.</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+    <!--<p> Name:  <input type="text" name="name" value=""> 
+    <span class="error">* <?php echo $nameErr;?></span></p>
+    <br><br>
+   <p>E-mail: <input type="text" name="email" value=""> 
+    <span class="error">* <?php echo $emailErr;?></span></p>
+    <br><br>
+  		  <p> Website: <input type="text" name="website" value=""> 
+    <span class="error"><?php echo $websiteErr;?></span></p> 
+    <br><br>
+  		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"> </textarea> 
+    <br><br>
+  		  <p> Gender: 
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> Female
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  Male
+    <span class="error">* <?php echo $genderErr;?></span>
+  		  </p>
+    <br><br>
+    <input type="submit" name="submit" value="Submit">  
+
+    -->		  
+
       <label for="registration"></label>
     </section>
   </div>
