@@ -73,6 +73,10 @@ input[type='radio']:checked + section {
 	background: #f44336;
 }
 
+.container section.registration {
+	background: grey;
+}
+
 .container section h1 {
 	margin: 0;
 	font-size: 64px;
@@ -217,37 +221,51 @@ input[type='radio']:checked + section {
 	z-index: 96;
 }
 
+.container section.registration {
+	z-index: 95;
+}
+
+
 #menu:checked + .container section.home {
-	top: 192px;
+	top: 252px;
 }
 
 #menu:checked + .container section.home:hover {
-	top: 188px;
+	top: 248px;
 }
 
 #menu:checked + .container section.about {
-	top: 132px;
+	top: 192px;
 }
 
 #menu:checked + .container section.about:hover {
-	top: 128px;
+	top: 188px;
 }
 
 #menu:checked + .container section.work {
-	top: 72px;
+	top: 132px;
 }
 
 #menu:checked + .container section.work:hover {
-	top: 68px;
+	top: 128px;
 }
 
 #menu:checked + .container section.contact {
-	top: 12px;
+	top: 72px;
 }
 
 #menu:checked + .container section.contact:hover {
+	top: 68px;
+}
+
+#menu:checked + .container section.registration {
+	top: 12px;
+}
+
+#menu:checked + .container section.registration:hover {
 	top: 8px;
 }
+
   </style>
 
 <body>
@@ -272,8 +290,13 @@ input[type='radio']:checked + section {
     </section>
     <input type="radio" name="tab" id="contact"/>
     <section class="contact">
-      <h1>Contact</h1>
+      <h1>Contact Us</h1>
       <label for="contact"></label>
+    </section>
+     <input type="radio" name="tab" id="registration"/>
+    <section class="registration">
+      <h1>Register</h1>
+      <label for="registration"></label>
     </section>
   </div>
   <div class="menu">
