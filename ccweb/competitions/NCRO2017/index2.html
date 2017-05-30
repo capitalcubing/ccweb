@@ -1,0 +1,326 @@
+<html>
+  <head>
+	  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css/comp-page.css"> 
+<link rel="stylesheet" type="text/css" href="../../css/info.css">
+<link rel="stylesheet" type="text/css" href="../../css/counter.css">
+	<link rel="stylesheet" type="text/css" href="../../css/responsive.css"> 
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/home.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	     <script type="text/javascript" src="../../js/slideshow.js"></script>
+      <script type="text/javascript" src="../../js/countdown.js"></script>
+      <title> NCR Open 2017</title>
+</head>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	background: #fff;
+	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+
+input[type='radio'],
+.hide {
+	display: none;
+}
+
+input[type='radio']:checked + section {
+	top: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	transition: all 500ms;
+	transform-style: preserve-3d;
+}
+
+.container section {
+	position: absolute;
+	top: 100vh;
+	width: 100%;
+	height: 100vh;
+	transition: top 500ms;
+	transform-style: preserve-3d;
+}
+
+.container section.home {
+	background: #2196f3;
+}
+
+.container section.about {
+	background: #ffc107;
+}
+
+.container section.work {
+	background: #4caf50;
+}
+
+.container section.contact {
+	background: #f44336;
+}
+
+.container section h1 {
+	margin: 0;
+	font-size: 64px;
+	transform: translate(0, 40vh);
+	text-align: center;
+	color: rgba(255,255,255,0.85);
+	transition: transform 500ms;
+	transform-style: preserve-3d;
+}
+
+.container section label {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.menu {
+	display: block;
+	position: fixed;
+	top: 20px;
+	left: 25px;
+	z-index: 1000;
+	transform: 0deg;
+	transition: all 500ms;
+	width: 35px;
+	height: 4px;
+	background: rgba(0,0,0,0.25);
+}
+
+.menu::before,
+.menu::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 4px;
+	background: rgba(0,0,0,0.25);
+	transition: all 500ms;
+}
+
+.menu::before {
+	top: 10px;
+}
+
+.menu::after {
+	top: 20px;
+}
+
+.menu:hover {
+	background: #fff;
+}
+
+.menu:hover::before,
+.menu:hover::after {
+	background: #fff;
+}
+
+.menu div,
+.menu div label:nth-child(1) {
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -6px;
+}
+
+.menu div label:nth-child(2) {
+	display: none;
+}
+
+#menu:checked + .container {
+	transform: scale(0.65) translateY(-18%);
+	transition: all 500ms;
+	transform-style: preserve-3d;
+}
+
+#menu:checked + .container section {
+	cursor: pointer;
+	overflow: hidden;
+	opacity: 1;
+	box-shadow: 0 0 40px rgba(0,0,0,0.25);
+	transform-style: preserve-3d;
+}
+
+#menu:checked + .container section h1 {
+	transform: scale(0.5);
+	transform-style: preserve-3d;
+}
+
+#menu:checked + .container + .menu {
+	top: 30px;
+	left: 20px;
+	transform: rotate(225deg);
+	transition: all 500ms;
+	transform-origin: center center;
+	background: #646464;
+}
+
+#menu:checked + .container + .menu::before,
+#menu:checked + .container + .menu::after {
+	background: #646464;
+	transition: all 500ms;
+}
+
+#menu:checked + .container + .menu::before {
+	opacity: 0;
+	transition: opacity 0s;
+}
+
+#menu:checked + .container + .menu::after {
+	margin-top: -20px;
+	transform: rotate(90deg);
+}
+
+#menu:checked + .container + .menu div label:nth-child(2) {
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -6px;
+}
+
+#menu:checked + .container + .menu div label:nth-child(1) {
+	display: none;
+}
+
+.container section.home {
+	z-index: 99;
+}
+
+.container section.about {
+	z-index: 98;
+}
+
+.container section.work {
+	z-index: 97;
+}
+
+.container section.contact {
+	z-index: 96;
+}
+
+#menu:checked + .container section.home {
+	top: 192px;
+}
+
+#menu:checked + .container section.home:hover {
+	top: 188px;
+}
+
+#menu:checked + .container section.about {
+	top: 132px;
+}
+
+#menu:checked + .container section.about:hover {
+	top: 128px;
+}
+
+#menu:checked + .container section.work {
+	top: 72px;
+}
+
+#menu:checked + .container section.work:hover {
+	top: 68px;
+}
+
+#menu:checked + .container section.contact {
+	top: 12px;
+}
+
+#menu:checked + .container section.contact:hover {
+	top: 8px;
+}
+  </style>
+
+<body>
+	
+<form>
+  <input type="radio" name="tab" id="menu"/>
+  <div class="container">
+    <input type="radio" name="tab" checked="checked" id="home"/>
+    <section class="home">
+      <h1>Home</h1>
+      <label for="home"></label>
+    </section>
+    <input type="radio" name="tab" id="about"/>
+    <section class="about">
+      <h1>About</h1>
+      <label for="about"></label>
+    </section>
+    <input type="radio" name="tab" id="work"/>
+    <section class="work">
+      <h1>Work</h1>
+      <label for="work"></label>
+    </section>
+    <input type="radio" name="tab" id="contact"/>
+    <section class="contact">
+      <h1>Contact</h1>
+      <label for="contact"></label>
+    </section>
+  </div>
+  <div class="menu">
+    <div>
+      <label for="menu"></label>
+      <label for="home"></label>
+    </div>
+  </div>
+</form>
+
+
+<br><br>
+<br><br>
+<br><br>
+      </script>
+      <script>
+ // Set the date we're counting down to
+var countDownDate = new Date("June 23, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+    + minutes + " minutes " + seconds + " seconds left ! ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Today is the Big Day !";
+    }
+}, 1000);
+      </script>
+      <script type="text/javascript" src="js/counter.js"></script>
+</body>
+</html>
+
+
