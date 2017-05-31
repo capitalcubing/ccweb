@@ -63,6 +63,9 @@
 	font-family: 'Forque';
 		font-size: 35px;
 		color:white;
+	padding-left: 2em; 
+		padding-right: 2em;
+		display: block;
 	}
 	
   h4 {
@@ -72,6 +75,9 @@
 	  text-align: center;
     text-decoration: underline;
         font-weight: bold;
+	padding-left: 2em; 
+	padding-right: 2em;
+	display: block;
 
   }
 
@@ -90,6 +96,9 @@
 	font-family: 'Open Sans';
 	  text-align: justify;
             text-justify: inter-word;
+	padding-left: 2em; 
+		padding-right: 2em;
+		display: block;
   }
 	
 
