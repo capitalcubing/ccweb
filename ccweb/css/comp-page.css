@@ -98,7 +98,7 @@ h2 {
 	padding: 60px 40px;
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	min-height: 280px;
+	height: 500px;
 }
 
 .sigma-section-header {
@@ -127,7 +127,7 @@ h2 {
 }
 
 .sigma-bg-gray {
-	background-color: #999;
+	background-color: #606060;
 	color: #FFF;
 }
 
