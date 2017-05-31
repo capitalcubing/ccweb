@@ -155,3 +155,7 @@ footer {
     width: 80%;
     margin-left:10%;
 }
+
+.side{
+	   display:inline-block;
+}
