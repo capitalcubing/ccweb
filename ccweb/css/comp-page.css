@@ -1,12 +1,14 @@
-
-
-
 body {
+    background-image: url(../images/u2rYCFb.jpg);
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 34px;
-	background:url(../images/background.jpg);
 }
 
 
