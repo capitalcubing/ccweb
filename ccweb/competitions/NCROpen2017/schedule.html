@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/info.css"> </link>
 <link rel="stylesheet" type="text/css" href="../../css/counter.css"></link>
 	<link rel="stylesheet" type="text/css" href="../../css/responsive.css"> </link>
+<link rel="shortcut icon" href="../../images/logos/ccfavicon.png" type="image/png">
 	<script type="text/javascript" src="../../js/comp-page.js"></script>
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script type="text/javascript"src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,21 +15,7 @@
       <script type="text/javascript" src="../../js/countdown.js"></script>
       <title>NCRO 2017</title>
 <header>
-	<nav id="header" class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">NCRO 2017</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="events.html">Events</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="register.html">Register</a></li>
-      <li><a href="competitors.html">Competitors</a></li>
-      <li><a href="">Back</a></li>
-    </ul>
-  </div>
-</nav>
+
 	</header>
  <!-- code for tracking -->
   <script>
@@ -44,10 +31,34 @@
 </head>
 <body>
   
+  
+	<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../"><img src="../../images/logos/ccblack.png" height="150%"></a>
+      <a class="navbar-brand" href="index1.html">NCRO 2017</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="events.html">Events</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="competitors.html">Competitors</a></li>
+      <li><a href="">Back</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
        
  
 
-<div id="Schedule">
+<div id="Schedule" style="padding-left:10%;padding-right:10%;">
 	<br><br>
 	<style>
 * {
@@ -112,7 +123,7 @@ h2{
 <br>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search By Event(3x3,2x2) or Round (Round 1, Finals)">
 
-<table id="myTable">
+<table id="myTable" style="border:2px solid black;">
   <tr class="header">
     <th style="width:10%;">From</th>
     <th style="width:10%;">To</th>
@@ -479,3 +490,4 @@ function myFunction() {
 </script>
 
 </body>
+</html>
