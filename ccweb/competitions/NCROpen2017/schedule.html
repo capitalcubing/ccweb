@@ -481,7 +481,14 @@ function myFunction() {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "" ;
 ;
-      } else {
+      }
+	else if(td.innerHTML.toUpperCase().indexOf("DAY") > -1)
+{
+        tr[i].style.display = "" ;
+}
+
+
+ else {
         tr[i].style.display = "none";
       }
     }       
