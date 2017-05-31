@@ -1,6 +1,6 @@
 @media(max-width:767px){
 .left-nav{
-  height:8vh;
+  height:11vh;
   text-align: center;
   color:white;
 }
@@ -12,7 +12,7 @@
 }
 
 .kek2 img{
-  height:5.5vh;
+  height:8.5vh;
 	top:0vh;
 }
 }
