@@ -77,7 +77,7 @@ h2 {
 	padding-top: 400px;
 	padding-bottom: 40px;
 	background: url(../images/ncro.png);
-	background-size: cover;
+	background-size: 100%;
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 }
@@ -124,6 +124,8 @@ h2 {
 
 .sigma-bg-lightgray {
 	background-color: #696969;
+		color: #FFF;
+
 }
 
 .sigma-bg-gray {
@@ -152,4 +154,8 @@ footer {
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 80%;
     margin-left:10%;
+}
+
+.side{
+	   display:inline-block;
 }
