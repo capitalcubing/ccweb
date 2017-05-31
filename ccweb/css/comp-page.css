@@ -121,6 +121,7 @@ h2 {
 
 @media(max-width:991px) and (min-width:768px){
 .col-md-5{
+		margin:10px;
 	width: 90%}}
 @media(max-width:1199px) and (min-width:992px){
 .col-md-5{
@@ -130,13 +131,14 @@ h2 {
 @media(max-width:767px)
 {
 .col-md-5{
+	margin:10px;
 	width:90%}
 }
 
 @media(min-width:1200px)
 {
 .col-md-5{
-	width:19%}
+	width:22%}
 }
 
 .form-group {
