@@ -94,7 +94,7 @@ h2 {
 
 .sigma-content {
 	padding: 60px 20px;
-	padding-right:1%;
+	padding-right:0%;
 	padding-left:1%;
 	margin-right:3%;
 	margin-left:3%;
@@ -147,23 +147,23 @@ h2 {
 
 
 .sigma-bg-lightgray {
-	background-color: #696969;
+	background-color: #f44336;
 		color: #FFF;
 
 }
 
 .sigma-bg-gray {
-	background-color: #606060;
+	background-color: #4caf50;
 	color: #FFF;
 }
 
 .sigma-bg-darkgray {
-	background-color: #666;
+	background-color: #ffc107;
 	color: #FFF;
 }
 
 .sigma-bg-black {
-	background-color: #444;
+	background-color: #2196f3;
 	color: #FFF;
 }
 

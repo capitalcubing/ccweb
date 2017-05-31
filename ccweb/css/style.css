@@ -69,7 +69,6 @@ h7 {
 	font-family: 'Forque';
 		font-size: 35px;
 		color:white;
-	padding-left: 2em; 
 		padding-right: 2em;
 		display: block;
 	}
@@ -108,7 +107,7 @@ h4 {
      font size: 40px;
     color: white;
 	font-family: 'Open Sans';
-	  text-align: justify;
+	  text-align: left;
             text-justify: inter-word;
 	padding-left: 2em; 
 		padding-right: 2em;
@@ -119,7 +118,7 @@ p3 {
      font size: 40px;
     color: white;
 	font-family: 'Open Sans';
-	  text-align: justify;
+	  text-align: left;
             text-justify: inter-word;
   }
 	
