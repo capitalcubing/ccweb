@@ -213,32 +213,6 @@ height:100%;
 }
 
 
-/* Set up colors of tiles */
-.nav-color1{
-  background-color:#2f333b; 
-}
-
-.nav-color2{
-  background-color:#b50d0c;
-}
-
-.nav-color3{
-  background-color:#dd5b00;
-}
-
-.nav-color4{
-  background-color:#fc9703;
-}
-
-.nav-color5{
-  background-color:#29a92b;
-}
-
-.nav-color6{
-  background-color:#0048cd;
-}
-
-
 /* Set up colors of tiles for Modi*/
 .nav-color1{
   background-color:#2f333b; 
@@ -257,7 +231,7 @@ height:100%;
 }
 
 .nav-color5{
-  background-color:#29a92b;
+  background-color:#299b2b;
 }
 
 .nav-color6{
@@ -291,27 +265,27 @@ height:100%;
 
 /* Hover-color of tiles */
 .nav-color1:hover a:hover{
- background-color:#3700A5;
+ background-color:#2f333b;
 }
 
 .nav-color2:hover a:hover{
- background-color:#DA0000;
+ background-color:#9a0b0a;
 }
 
 .nav-color3:hover a:hover{
- background-color:#ff6600;
+ background-color:#c04f00;
 }
 
 .nav-color4:hover a:hover{
- background-color:#E0C300;
+ background-color:#d8a800;
 }
 
 .nav-color5:hover a:hover{
- background-color:#00C400;
+ background-color:#238324;
 }
 
 .nav-color6:hover a:hover{
- background-color:#005ED5;
+ background-color:#003eb0;
 }
 
 /*Remove horizontal bootstrap grid padding */
