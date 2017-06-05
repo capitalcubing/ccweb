@@ -21,6 +21,87 @@
       <title> NCR Open 2017</title>
 </head>
 
+	<style>
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #313131;
+  background-image: url(https://subtlepatterns.com/patterns/debut_dark.png);
+}
+.q-question {
+  box-sizing: border-box;
+  background: rgba(0,128,128,0.8);
+  text-align: center;
+  padding-bottom: 2.5em;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+  border-bottom: .25em solid #004d4d;
+  padding: 0 1em 1em;
+}
+.q-question h3 {
+  margin: 0;
+  padding: .5em 0 .25em 0;
+  font-weight: 700;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  color: #003434;
+}
+.q-question p {
+  line-height: 1.65em;
+  margin: 0 auto 1em auto;
+  color: #cccccc;
+  font-weight: 200;
+  width: 65%;
+}
+@media (max-width: 50em) {
+  .q-question p {
+    width: 100%;
+  }
+}
+.q-question form textarea {
+  background: transparent;
+  border: 1px solid #005f5f;
+  border-radius: .25em;
+  width: 55%;
+  padding: .5em;
+  outline: none;
+  font-size: 1.25em;
+  color: #cccccc;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 200;
+  box-shadow: 5px 5px 0px #006464;
+  box-sizing: border-box;
+}
+@media (max-width: 50em) {
+  .q-question form textarea {
+    width: 100%;
+  }
+}
+.clickr {
+  border: 1px solid rgba(255,99,71,0.25);
+  padding: 1em 2em;
+  background: transparent;
+  color: #eaeaea;
+  text-transform: uppercase;
+  border-radius: .75em;
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: auto auto;
+  margin-top: 2em;
+  outline: none;
+}
+.clickr:hover {
+  border: 1px solid rgba(255,99,71,0.4);
+}
+.clickr:active {
+  background: rgba(0,0,0,0.1);
+  outline: none;
+}
+
+  </style>
+	
 <body>
   
 	<nav class="navbar navbar-default">
@@ -81,7 +162,24 @@
  
  
 
-</section>
+<h3 style="font-size:60px;text-align:center;text-decoration: underline;"> TITLE SPONSOR </h3>
+<img src="../../images/logos/149425516046112-5.png" height="100px"  style=" display: block;margin:auto">
+<br><br>
+<aside class="q-question">
+  <h3>WANT TO KNOW ABOUT US?</h3>
+  <p>Email:
+
+Sales and retailers：
+GAN After-Sales Service:
+Want to be our testers, please send you WCA id, your contact information (including name, address,country, zip code, phone number, and anything you think you can attract us) to: , we’ll contact soon if you meet our qulification. 
+
+ 
+
+*Working Day: Monday to Friday</p>
+</aside>
+
+<button class="clickr">About Gans</button>
+
 
       <script>
  // Set the date we're counting down to
@@ -112,6 +210,18 @@ var x = setInterval(function() {
 }, 1000);
       </script>
       <script type="text/javascript" src="js/counter.js"></script>
+	
+	      </script>
+      <script type="text/javascript" src="js/counter.js"></script>
+
+      <script>
+        $('.q-question').hide();
+
+$('.clickr').click(function(){
+  $('.q-question').slideToggle();
+});
+
+</script>
 </body>
 </html>
 
