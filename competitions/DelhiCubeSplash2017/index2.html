@@ -1,0 +1,591 @@
+<html>
+  <head>
+	  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css/comp-page.css"> 
+<link rel="stylesheet" type="text/css" href="../../css/info.css">
+<link rel="stylesheet" type="text/css" href="../../css/counter.css">
+	<link rel="stylesheet" type="text/css" href="../../css/responsive.css"> 
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/home.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	     <script type="text/javascript" src="../../js/slideshow.js"></script>
+      <script type="text/javascript" src="../../js/countdown.js"></script>
+      <title> NCR Open 2017</title>
+</head>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	background: #fff;
+	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+
+input[type='radio'],
+.hide {
+	display: none;
+}
+
+input[type='radio']:checked + section {
+	top: 0;
+}
+
+.container {
+	width: 100%;
+	height: 80vh;
+	transition: all 500ms;
+	transform-style: preserve-3d;
+}
+
+.container section {
+	position: absolute;
+	top: 100vh;
+	width: 100%;
+	height: 100vh;
+	transition: top 500ms;
+	transform-style: preserve-3d;
+}
+
+.container section.home {
+	background: #2196f3;
+}
+
+.container section.about {
+	background: #ffc107;
+}
+
+.container section.work {
+	background: #4caf50;
+}
+
+.container section.contact {
+	background: #f44336;
+}
+
+.container section.registration {
+	background: grey;
+}
+
+.container section h1 {
+	margin: 0;
+	font-size: 64px;
+	transform: translate(0, 0vh);
+	color: rgba(255,255,255,0.85);
+	transition: transform 500ms;
+	transform-style: preserve-3d;
+}
+
+.container section label {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.menu {
+	display: block;
+	position: fixed;
+	top: 20px;
+	left: 25px;
+	z-index: 1000;
+	transform: 0deg;
+	transition: all 500ms;
+	width: 35px;
+	height: 4px;
+	background: rgba(0,0,0,0.25);
+}
+
+.menu::before,
+.menu::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 4px;
+	background: rgba(0,0,0,0.25);
+	transition: all 500ms;
+}
+
+.menu::before {
+	top: 10px;
+}
+
+.menu::after {
+	top: 20px;
+}
+
+.menu:hover {
+	background: #fff;
+}
+
+.menu:hover::before,
+.menu:hover::after {
+	background: #fff;
+}
+
+.menu div,
+.menu div label:nth-child(1) {
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -6px;
+}
+
+.menu div label:nth-child(2) {
+	display: none;
+}
+
+#menu:checked + .container {
+	transform: scale(0.65) translateY(-18%);
+	transition: all 500ms;
+	transform-style: preserve-3d;
+}
+
+#menu:checked + .container section {
+	cursor: pointer;
+	overflow: hidden;
+	opacity: 1;
+	box-shadow: 0 0 40px rgba(0,0,0,0.25);
+	transform-style: preserve-3d;
+}
+
+#menu:checked + .container section h1 {
+	transform: scale(0.5);
+	transform-style: preserve-3d;
+}
+
+#menu:checked + .container + .menu {
+	top: 30px;
+	left: 20px;
+	transform: rotate(225deg);
+	transition: all 500ms;
+	transform-origin: center center;
+	background: #646464;
+}
+
+#menu:checked + .container + .menu::before,
+#menu:checked + .container + .menu::after {
+	background: #646464;
+	transition: all 500ms;
+}
+
+#menu:checked + .container + .menu::before {
+	opacity: 0;
+	transition: opacity 0s;
+}
+
+#menu:checked + .container + .menu::after {
+	margin-top: -20px;
+	transform: rotate(90deg);
+}
+
+#menu:checked + .container + .menu div label:nth-child(2) {
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -6px;
+}
+
+#menu:checked + .container + .menu div label:nth-child(1) {
+	display: none;
+}
+
+.container section.home {
+	z-index: 99;
+}
+
+.container section.about {
+	z-index: 98;
+}
+
+.container section.work {
+	z-index: 97;
+}
+
+.container section.contact {
+	z-index: 96;
+}
+
+.container section.registration {
+	z-index: 95;
+}
+
+
+#menu:checked + .container section.home {
+	top: 252px;
+}
+
+#menu:checked + .container section.home:hover {
+	top: 248px;
+}
+
+#menu:checked + .container section.about {
+	top: 192px;
+}
+
+#menu:checked + .container section.about:hover {
+	top: 188px;
+}
+
+#menu:checked + .container section.work {
+	top: 132px;
+}
+
+#menu:checked + .container section.work:hover {
+	top: 128px;
+}
+
+#menu:checked + .container section.contact {
+	top: 72px;
+}
+
+#menu:checked + .container section.contact:hover {
+	top: 68px;
+}
+
+#menu:checked + .container section.registration {
+	top: 12px;
+}
+
+#menu:checked + .container section.registration:hover {
+	top: 8px;
+}
+
+  </style>
+
+<body>
+	
+<form>
+  <input type="radio" name="tab" id="menu"/>
+  <div class="container">
+    <input type="radio" name="tab" checked="checked" id="home"/>
+    <section class="home">
+      <h1>Home</h1>
+      <img src="../../images/18486320_1907765179500904_5268148443017855684_n.jpg" height="50%"  style=" display: block;
+    margin:0;
+    width: 80%; display: block;
+    margin: auto;">
+
+    
+
+      <label for="home"></label>
+    </section>
+    <input type="radio" name="tab" id="about"/>
+    <section class="about">
+      <h1>Events</h1>
+      <div id="Events">
+<table class="table" align="center">
+        <thead>
+          <tr>
+            <th style="max-width:3px">Event</th>
+            <th style="max-width:1px">Round 1</th>
+            <th style="max-width:1px">Round 2</th>
+            <th style="max-width:1px">Round 3</th>
+            <th style="max-width:1px">Round 4</th>
+		  
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            	<td><img src="../../images/3x3.png" alt="" border=3 height=20px width=25px>   3x3    </img></td>
+            	<td>N/A</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+           <tr>
+            	<td><img src="../../images/2x2.png" alt="" border=3 height=20px width=25px>   2x2     </img></td>
+            	<td>N/A</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/3OH.png" alt="" border=3 height=20px width=25px>   3x3 One Handed    </img></td>
+            	<td>1:00</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/3BLD.png" alt="" border=3 height=20px width=25px>   3x3 Blindfolded    </img></td>
+            	<td>20:00</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/FEET.png" alt="" border=3 height=20px width=25px>   3x3 with Feet    </img></td>
+            	<td>4:00</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/FMC.png" alt="" border=3 height=20px width=25px>   Fewest Moves Challenge    </img></td>
+            	<td>N/A</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/4x4.png" alt="" border=3 height=20px width=25px>   4x4    </img></td>
+            	<td>1:30</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/5x5.png" alt="" border=3 height=20px width=25px>   5x5    </img></td>
+            	<td>2:30</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/6x6.png" alt="" border=3 height=20px width=25px>   6x6    </img></td>
+            	<td>5:30</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/7x7.png" alt="" border=3 height=20px width=25px>   7x7    </img></td>
+            	<td>7:00</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/PYRA.png" alt="" border=3 height=20px width=25px>   Pyraminx    </img></td>
+            	<td>0:25</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/MINX.png" alt="" border=3 height=20px width=25px>   Megaminx    </img></td>
+            	<td>2:30</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/CLOCK.png" alt="" border=3 height=20px width=25px>   Clock    </img></td>
+            	<td>0:35</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+            	<td><img src="../../images/SKEWB.png" alt="" border=3 height=20px width=25px>   Skewb    </img></td>
+            	<td>0:20</td>
+	    	<td>Top 64</td> 
+		  <td>Top 32</td>
+		  <td>Top 16</td>
+          </tr>
+	 <tr>
+          
+        </tbody>
+      </table>
+<br><br><br>
+</div>
+
+      <label for="about"></label>
+    </section>
+    <input type="radio" name="tab" id="work"/>
+    <section class="work">
+      <h1>Schedule</h1>
+      <label for="work"></label>
+    </section>
+    <input type="radio" name="tab" id="contact"/>
+    <section class="contact">
+      <h1>Register</h1>
+      <label for="contact"></label>
+    </section>
+     <input type="radio" name="tab" id="registration"/>
+    <section class="registration">
+      <h1>Contact us</h1>		  
+<?php
+		  
+// define variables and set to empty values
+		  
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed"; 
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+    
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+      $websiteErr = "Invalid URL"; 
+    }
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+	<br><br><br>  
+<!--<p><span class="error">* required field.</span></p>-->
+<br><br>    
+
+<div align="center" >
+  <form id="gform" method="POST" class="pure-form"
+  action="https://script.google.com/macros/s/AKfycbyL0PDA4mj4K7ztBO3pW5vrugQBfeRzbJQP4ey_NEdyjy-ZaBc/exec">
+    <!-- change the form action to your script url -->
+        <fieldset class="pure-group">
+            <input id="name" name="name" type="text" class="pure-input-1-2" placeholder="Name" required><br>
+            <input type="email" name="email" id="email" class="pure-input-1-2" placeholder="yourname@email.com" required><br>      
+            <span id="email-invalid" style="visibility:hidden">  Must be a valid email address</span> 
+            <input type="text" id="contact" name="contact" class="pure-input-1-2" placeholder="Phone Number"><br>
+            <textarea class="pure-input-1-2" placeholder="Comments" id="message" name="message" required></textarea>
+        </fieldset>
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em>. We will contact you within 24 hours.</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+    <!--<p> Name:  <input type="text" name="name" value=""> 
+    <span class="error">* <?php echo $nameErr;?></span></p>
+    <br><br>
+   <p>E-mail: <input type="text" name="email" value=""> 
+    <span class="error">* <?php echo $emailErr;?></span></p>
+    <br><br>
+  		  <p> Website: <input type="text" name="website" value=""> 
+    <span class="error"><?php echo $websiteErr;?></span></p> 
+    <br><br>
+  		  <p> Comment: </p> <textarea name="comment" rows="5" cols="40"> </textarea> 
+    <br><br>
+  		  <p> Gender: 
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> Female
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  Male
+    <span class="error">* <?php echo $genderErr;?></span>
+  		  </p>
+    <br><br>
+    <input type="submit" name="submit" value="Submit">  
+
+    -->		  
+
+      <label for="registration"></label>
+    </section>
+  </div>
+  <div class="menu">
+    <div>
+      <label for="menu"></label>
+      <label for="home"></label>
+    </div>
+  </div>
+</form>
+
+
+<br><br>
+<br><br>
+<br><br>
+      </script>
+      <script>
+ // Set the date we're counting down to
+var countDownDate = new Date("June 23, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+    + minutes + " minutes " + seconds + " seconds left ! ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Today is the Big Day !";
+    }
+}, 1000);
+      </script>
+
+      <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-100092615-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      <script type="text/javascript" src="js/counter.js"></script>
+</body>
+</html>
+
+
