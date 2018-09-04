@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+<title>Card Practice </title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6" id="card1">
+      Loading
+    </div>
+    <div class="col-lg-6" id="card2">
+      Loading
+    </div>
+  </div>
+  <div class="row justify-content-lg-center"">
+  <div class="col-lg-4 ">
+  <button type="button" class="btn btn-primary btn-lg" id="nextbtn">Next</button>
+  </div>
+  </div>
+</div></body>
+<script>
+console.log("a12");
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+function getRandomCard(){
+  return "Cards1-52/Card"+String(getRandomInt(52)+1)+".png";
+}
+
+function cardTag(){
+  return "<img src='"+getRandomCard()+"' width='50%'>";
+}
+
+function setRandomCard(){
+$('#card1').html(cardTag());
+$('#card2').html(cardTag());
+ }
+
+setRandomCard();
+ 
+$('#nextbtn').click(function(){
+setRandomCard();
+});
+
+// Get the input field
+var input = document.getElementById("nextbtn");
+
+// Execute a function when the user releases a key on the keyboard
+document.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  console.log("haha")
+  if (event.keyCode === 32) {
+    // Trigger the button element with a click
+    document.getElementById("nextbtn").click();
+  }
+}); 
+
+
+console.log(getRandomCard())
+</script>
+</html>
